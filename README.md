@@ -39,6 +39,8 @@ export default {
 };
 ```
 
+Now, run `npm build` and this will generate sitemap.xml and robots.txt files on your dist folder.
+
 ### hostname
 
 - **Type:** `string`
