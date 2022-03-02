@@ -64,7 +64,7 @@ describe('Index', () => {
     expect(existsSync(SITEMAP_FILE)).toBe(false)
     expect(existsSync(ROBOTS_FILE)).toBe(false)
 
-    generateSitemap({})
+    generateSitemap()
 
     expect(existsSync(SITEMAP_FILE)).toBe(false)
     expect(existsSync(ROBOTS_FILE)).toBe(false)

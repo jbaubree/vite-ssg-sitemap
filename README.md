@@ -34,7 +34,7 @@ export default {
     Vue(),
   ],
   ssgOptions: {
-    onFinished() { generateSitemap({}) },
+    onFinished() { generateSitemap() },
   },
 };
 ```

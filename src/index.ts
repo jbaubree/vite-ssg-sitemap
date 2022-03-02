@@ -9,7 +9,7 @@ import { removeMaybeSuffix } from './utils'
 import { resolveOptions } from './options'
 import type { ResolvedOptions, UserOptions } from './types'
 
-export default function generateSitemap(options: UserOptions) {
+export default function generateSitemap(options: UserOptions = {}) {
   const resolvedOptions: ResolvedOptions = resolveOptions(options)
 
   const routes = [
