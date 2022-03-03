@@ -11,6 +11,7 @@ export function resolveOptions(userOptions: UserOptions): ResolvedOptions {
       lastmod: new Date(),
       readable: false,
       allowRobots: true,
+      nested: false,
     },
     userOptions,
   )

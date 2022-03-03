@@ -11,6 +11,7 @@ const config = defineConfig({
     Pages(),
   ],
   ssgOptions: {
+    dirStyle: 'nested',
     async onFinished() {
       const names = await getNames()
       const dynamicRoutes = names.map(name => `/names/${name}`)
@@ -18,6 +19,7 @@ const config = defineConfig({
         hostname: 'https://mywebsite.com/',
         dynamicRoutes,
         readable: true,
+        nested: true,
       })
     },
   },
