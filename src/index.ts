@@ -13,7 +13,7 @@ export default function generateSitemap(options: UserOptions = {}) {
   const resolvedOptions: ResolvedOptions = resolveOptions(options)
   const routes = [
     ...glob.sync('**/*.html', { cwd: resolvedOptions.outDir }).map((route) => {
-      return ensurePrefix('/', resolvedOptions.nested ? route.replace(/index.html/g, '') : parse(route).name)
+      return ensurePrefix('/', resolvedOptions.nested ? removeMaybeSuffix('/', route.replace(/index.html/g, '')) : parse(route).name)
     }),
     ...resolvedOptions.dynamicRoutes.map(route => ensurePrefix('/', parse(route).name)),
   ]
