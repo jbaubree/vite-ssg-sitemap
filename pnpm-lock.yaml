@@ -37,7 +37,7 @@ importers:
       '@vitejs/plugin-vue': ^2.2.4
       '@vue/compiler-sfc': ^3.2.31
       '@vueuse/head': ^0.7.5
-      typescript: ^4.5.5
+      typescript: ^4.6.2
       vite: ^2.8.6
       vite-plugin-pages: 0.21.3
       vite-ssg: ^0.17.11
@@ -528,8 +528,8 @@ packages:
       '@vue/reactivity-transform': 3.2.31
       '@vue/shared': 3.2.31
       estree-walker: 2.0.2
-      magic-string: 0.25.7
-      postcss: 8.4.7
+      magic-string: 0.25.9
+      postcss: 8.4.8
       source-map: 0.6.1
 
   /@vue/compiler-ssr/3.2.31:
@@ -549,7 +549,7 @@ packages:
       '@vue/compiler-core': 3.2.31
       '@vue/shared': 3.2.31
       estree-walker: 2.0.2
-      magic-string: 0.25.7
+      magic-string: 0.25.9
 
   /@vue/reactivity/3.2.31:
     resolution: {integrity: sha512-HVr0l211gbhpEKYr2hYe7hRsV91uIVGFYNHj73njbARVGHQvIojkImKMaZNDdoDZOIkMsBc9a1sMqR+WZwfSCw==}
@@ -568,7 +568,7 @@ packages:
     dependencies:
       '@vue/runtime-core': 3.2.31
       '@vue/shared': 3.2.31
-      csstype: 2.6.19
+      csstype: 2.6.20
     dev: false
 
   /@vue/server-renderer/3.2.31_vue@3.2.31:
@@ -991,8 +991,8 @@ packages:
       cssom: 0.3.8
     dev: true
 
-  /csstype/2.6.19:
-    resolution: {integrity: sha512-ZVxXaNy28/k3kJg0Fou5MiYpp88j7H9hLZp8PDC3jV0WFjfH5E9xHb56L0W59cPbKbcHXeP4qyT8PrHp8t6LcQ==}
+  /csstype/2.6.20:
+    resolution: {integrity: sha512-/WwNkdXfckNgw6S5R125rrW8ez139lBHWouiBvX8dfMFtcn6V81REDqnH7+CRpRipfYlyU1CmOnOxrmGcFOjeA==}
     dev: false
 
   /data-urls/3.0.1:
@@ -2597,8 +2597,8 @@ packages:
       yallist: 4.0.0
     dev: true
 
-  /magic-string/0.25.7:
-    resolution: {integrity: sha512-4CrMT5DOHTDk4HYDlzmwu4FVCcIYI8gauveasrdCu2IKIFOJ3f0v/8MDGJCDL9oD2ppz/Av1b0Nj345H9M+XIA==}
+  /magic-string/0.25.9:
+    resolution: {integrity: sha512-RmF0AsMzgt25qzqqLc1+MbHmhdx0ojF2Fvs4XnOqz2ZOBXzzkEwc/dJQZCYHAn7v1jbVOjAZfK8msRn4BxO4VQ==}
     dependencies:
       sourcemap-codec: 1.4.8
 
@@ -2964,14 +2964,6 @@ packages:
       yaml: 1.10.2
     dev: true
 
-  /postcss/8.4.7:
-    resolution: {integrity: sha512-L9Ye3r6hkkCeOETQX6iOaWZgjp3LL6Lpqm6EtgbKrgqGGteRMNb9vzBfRL96YOSu8o7x3MfIH9Mo5cPJFGrW6A==}
-    engines: {node: ^10 || ^12 || >=14}
-    dependencies:
-      nanoid: 3.3.1
-      picocolors: 1.0.0
-      source-map-js: 1.0.2
-
   /postcss/8.4.8:
     resolution: {integrity: sha512-2tXEqGxrjvAO6U+CJzDL2Fk2kPHTv1jQsYkSoMeOis2SsYaXRO2COxTdQp99cYvif9JTXaAk9lYGc3VhJt7JPQ==}
     engines: {node: ^10 || ^12 || >=14}
@@ -2979,7 +2971,6 @@ packages:
       nanoid: 3.3.1
       picocolors: 1.0.0
       source-map-js: 1.0.2
-    dev: true
 
   /prelude-ls/1.1.2:
     resolution: {integrity: sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=}
