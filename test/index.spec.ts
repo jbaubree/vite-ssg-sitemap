@@ -1,8 +1,9 @@
 import { existsSync, readFileSync, writeFileSync } from 'fs'
+import { resolve } from 'path'
 import { describe, expect, test } from 'vitest'
 import format from 'xml-formatter'
 
-import generateSitemap, { getFinalSitemapPath, getFormattedSitemap, writeRobotFile, writeXmlFile } from '../src'
+import generateSitemap, { getFinalSitemapPath, getFormattedSitemap, getResolvedPath, writeRobotFile, writeXmlFile } from '../src'
 import { resolveOptions } from '../src/options'
 import { ROBOTS_FILE, SITEMAP_FILE, TEST_FILE } from './variables'
 
@@ -71,6 +72,12 @@ describe('Index', () => {
       hostname: 'http://test.com/',
     }))).toEqual(
       'http://test.com/sitemap.xml',
+    )
+  })
+
+  test('Get resolved path', async() => {
+    expect(getResolvedPath('test.txt', resolveOptions({}))).toEqual(
+      resolve('./dist/test.txt'),
     )
   })
 })

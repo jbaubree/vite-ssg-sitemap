@@ -1,5 +1,5 @@
 import { writeFileSync } from 'fs'
-import { parse, resolve } from 'path'
+import { join, parse, resolve } from 'path'
 import { SitemapStream, streamToPromise } from 'sitemap'
 import { ensurePrefix, ensureSuffix } from '@antfu/utils'
 import format from 'xml-formatter'
@@ -13,7 +13,7 @@ export default function generateSitemap(options: UserOptions = {}) {
   const resolvedOptions: ResolvedOptions = resolveOptions(options)
   const routes = [
     ...glob.sync('**/*.html', { cwd: resolvedOptions.outDir }).map(route => (
-      ensurePrefix('/', parse(removeMaybeSuffix('/', removeMaybeSuffix('index.html', route))).name)
+      join('/', parse(route.replace(/\/?index\.html$/g, '')).name)
     )),
     ...resolvedOptions.dynamicRoutes.map(route => ensurePrefix('/', parse(route).name)),
   ]
