@@ -20,7 +20,6 @@ describe('Index', () => {
     const options = {
       dynamicRoutes: ['/'],
       allowRobots: false,
-      nested: true,
     }
     generateSitemap(options)
     expect(readFileSync(ROBOTS_FILE).toString('utf-8')).toEqual(

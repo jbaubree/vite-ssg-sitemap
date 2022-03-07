@@ -11,7 +11,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.ts --dts --format cjs,esm",
-    "dev": "npm run build --watch",
+    "dev": "npm run build -- --watch",
     "example:build": "npm -C example run build",
     "lint": "eslint \"**/*.{vue,ts,js}\"",
     "release": "npx bumpp --commit --tag --push && npm publish",

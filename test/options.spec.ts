@@ -12,7 +12,6 @@ describe('Options', () => {
         "dynamicRoutes": [],
         "hostname": "http://localhost/",
         "lastmod": Any<Date>,
-        "nested": false,
         "outDir": "dist",
         "priority": 1,
         "readable": false,

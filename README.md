@@ -113,12 +113,6 @@ Converts XML into a human readable format
 
 Allow robots crawl (in robots.txt file).
 
-### nested
-
-- **Type:** `boolean`
-- **Default:** `false`
-
-Is nested dir style (dirStyle: 'nested' in ssg options).
 
 ## License
 

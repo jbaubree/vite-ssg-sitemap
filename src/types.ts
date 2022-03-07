@@ -43,11 +43,6 @@ interface Options {
    * @default true
    */
   allowRobots: boolean
-  /**
-   * Is nested dir style (dirStyle: 'nested' in ssg options)
-   * @default false
-   */
-  nested: boolean
 }
 
 export type UserOptions = Partial<Options>
