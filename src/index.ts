@@ -5,7 +5,6 @@ import { ensurePrefix, ensureSuffix } from '@antfu/utils'
 import format from 'xml-formatter'
 import glob from 'fast-glob'
 
-import { removeMaybeSuffix } from './utils'
 import { resolveOptions } from './options'
 import type { ResolvedOptions, UserOptions } from './types'
 
@@ -13,7 +12,7 @@ export default function generateSitemap(options: UserOptions = {}) {
   const resolvedOptions: ResolvedOptions = resolveOptions(options)
   const routes = [
     ...glob.sync('**/*.html', { cwd: resolvedOptions.outDir }).map(route => (
-      join('/', parse(route.replace(/\/?index\.html$/g, '')).name)
+      join('/', parse(route.replace(/index\.html/g, '')).name)
     )),
     ...resolvedOptions.dynamicRoutes.map(route => ensurePrefix('/', parse(route).name)),
   ]
@@ -31,7 +30,7 @@ export default function generateSitemap(options: UserOptions = {}) {
 
 export function getFormattedSitemap(options: ResolvedOptions, routes: string[]) {
   return routes.map(route => ({
-    url: `${removeMaybeSuffix('/', options.hostname)}${route}`,
+    url: new URL(route, options.hostname).href,
     changefreq: options.changefreq,
     priority: options.priority,
     lastmod: options.lastmod,
