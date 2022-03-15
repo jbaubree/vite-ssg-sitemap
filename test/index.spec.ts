@@ -1,11 +1,11 @@
-import { existsSync, readFileSync, writeFileSync } from 'fs'
-import { resolve } from 'path'
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'fs'
+import { dirname, resolve } from 'path'
 import { describe, expect, test } from 'vitest'
 import format from 'xml-formatter'
 
 import generateSitemap, { getFinalSitemapPath, getFormattedSitemap, getResolvedPath, writeRobotFile, writeXmlFile } from '../src'
 import { resolveOptions } from '../src/options'
-import { ROBOTS_FILE, SITEMAP_FILE, TEST_FILE } from './variables'
+import { ROBOTS_FILE, SITEMAP_FILE, TEST_FILES } from './variables'
 
 describe('Index', () => {
   test('Generate sitemap', async() => {
@@ -17,7 +17,13 @@ describe('Index', () => {
     expect(existsSync(SITEMAP_FILE)).toBe(false)
     expect(existsSync(ROBOTS_FILE)).toBe(false)
 
-    writeFileSync(TEST_FILE, '')
+    TEST_FILES.forEach((testFile) => {
+      const folder = dirname(testFile)
+      if (!existsSync(folder))
+        mkdirSync(folder)
+      writeFileSync(testFile, '')
+    })
+
     const options = {
       dynamicRoutes: ['/'],
       allowRobots: false,

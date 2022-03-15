@@ -11,9 +11,12 @@ import type { ResolvedOptions, UserOptions } from './types'
 export default function generateSitemap(options: UserOptions = {}) {
   const resolvedOptions: ResolvedOptions = resolveOptions(options)
   const routes = [
-    ...glob.sync('**/*.html', { cwd: resolvedOptions.outDir }).map(route => (
-      join('/', parse(route.replace(/index\.html/g, '')).name)
-    )),
+    ...glob.sync('**/*.html', { cwd: resolvedOptions.outDir }).map((route) => {
+      const parsedRoute = parse(route.replace(/index\.html/g, ''))
+      return (
+        join('/', parsedRoute.dir, parsedRoute.name)
+      )
+    }),
     ...resolvedOptions.dynamicRoutes.map(route => ensurePrefix('/', parse(route).name)),
   ]
   if (!routes.length) return
