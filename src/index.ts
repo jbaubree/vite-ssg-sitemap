@@ -1,7 +1,7 @@
 import { writeFileSync } from 'fs'
 import { join, parse, resolve } from 'path'
 import { SitemapStream, streamToPromise } from 'sitemap'
-import { ensurePrefix, ensureSuffix } from '@antfu/utils'
+import { ensurePrefix, ensureSuffix, slash } from '@antfu/utils'
 import format from 'xml-formatter'
 import glob from 'fast-glob'
 
@@ -30,10 +30,10 @@ export function getRoutes(options: ResolvedOptions) {
     ...glob.sync('**/*.html', { cwd: options.outDir }).map((route) => {
       const parsedRoute = parse(route.replace(/index\.html/g, ''))
       return (
-        join('/', parsedRoute.dir, parsedRoute.name)
+        slash(join('/', parsedRoute.dir, parsedRoute.name))
       )
     }),
-    ...options.dynamicRoutes.map(route => join('/', join(parse(route).dir, parse(route).name))),
+    ...options.dynamicRoutes.map(route => slash(join('/', join(parse(route).dir, parse(route).name)))),
   ]
 }
 
