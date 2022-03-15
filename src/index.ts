@@ -1,7 +1,7 @@
 import { writeFileSync } from 'fs'
 import { join, parse, resolve } from 'path'
 import { SitemapStream, streamToPromise } from 'sitemap'
-import { ensurePrefix, ensureSuffix } from '@antfu/utils'
+import { ensurePrefix, ensureSuffix, slash } from '@antfu/utils'
 import format from 'xml-formatter'
 import glob from 'fast-glob'
 
@@ -10,13 +10,10 @@ import type { ResolvedOptions, UserOptions } from './types'
 
 export default function generateSitemap(options: UserOptions = {}) {
   const resolvedOptions: ResolvedOptions = resolveOptions(options)
-  const routes = [
-    ...glob.sync('**/*.html', { cwd: resolvedOptions.outDir }).map(route => (
-      join('/', parse(route.replace(/index\.html/g, '')).name)
-    )),
-    ...resolvedOptions.dynamicRoutes.map(route => ensurePrefix('/', parse(route).name)),
-  ]
+  const routes = getRoutes(resolvedOptions)
+
   if (!routes.length) return
+
   const formattedSitemap = getFormattedSitemap(resolvedOptions, routes)
 
   const stream = new SitemapStream()
@@ -26,6 +23,18 @@ export default function generateSitemap(options: UserOptions = {}) {
   })
   stream.end()
   writeRobotFile(getResolvedPath('robots.txt', resolvedOptions), resolvedOptions)
+}
+
+export function getRoutes(options: ResolvedOptions) {
+  return [
+    ...glob.sync('**/*.html', { cwd: options.outDir }).map((route) => {
+      const parsedRoute = parse(route.replace(/index\.html/g, ''))
+      return (
+        slash(join('/', parsedRoute.dir, parsedRoute.name))
+      )
+    }),
+    ...options.dynamicRoutes.map(route => slash(join('/', join(parse(route).dir, parse(route).name)))),
+  ]
 }
 
 export function getFormattedSitemap(options: ResolvedOptions, routes: string[]) {

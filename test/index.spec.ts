@@ -1,11 +1,12 @@
-import { existsSync, readFileSync, writeFileSync } from 'fs'
+import { existsSync, readFileSync } from 'fs'
 import { resolve } from 'path'
 import { describe, expect, test } from 'vitest'
 import format from 'xml-formatter'
 
-import generateSitemap, { getFinalSitemapPath, getFormattedSitemap, getResolvedPath, writeRobotFile, writeXmlFile } from '../src'
+import generateSitemap, { getFinalSitemapPath, getFormattedSitemap, getResolvedPath, getRoutes, writeRobotFile, writeXmlFile } from '../src'
 import { resolveOptions } from '../src/options'
-import { ROBOTS_FILE, SITEMAP_FILE, TEST_FILE } from './variables'
+import { generateTestFiles } from './utils'
+import { ROBOTS_FILE, SITEMAP_FILE } from './variables'
 
 describe('Index', () => {
   test('Generate sitemap', async() => {
@@ -17,7 +18,8 @@ describe('Index', () => {
     expect(existsSync(SITEMAP_FILE)).toBe(false)
     expect(existsSync(ROBOTS_FILE)).toBe(false)
 
-    writeFileSync(TEST_FILE, '')
+    generateTestFiles()
+
     const options = {
       dynamicRoutes: ['/'],
       allowRobots: false,
@@ -26,6 +28,32 @@ describe('Index', () => {
     expect(readFileSync(ROBOTS_FILE).toString('utf-8')).toEqual(
       'User-agent: *\nDisallow: /\n\nSitemap: http://localhost/sitemap.xml',
     )
+  })
+
+  test('Get routes', async() => {
+    expect(getRoutes(resolveOptions({}))).toEqual([])
+    expect(getRoutes(resolveOptions({ dynamicRoutes: ['/', 'route', '/route/sub-route'] }))).toEqual([
+      '/',
+      '/route',
+      '/route/sub-route',
+    ])
+
+    generateTestFiles()
+
+    expect(getRoutes(resolveOptions({}))).toEqual([
+      '/test',
+      '/sub-path/deeper-path',
+      '/sub-path',
+    ])
+
+    expect(getRoutes(resolveOptions({ dynamicRoutes: ['/', 'route', '/route/sub-route'] }))).toEqual([
+      '/test',
+      '/sub-path/deeper-path',
+      '/sub-path',
+      '/',
+      '/route',
+      '/route/sub-route',
+    ])
   })
 
   test('Get sitemap links', async() => {
