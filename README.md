@@ -106,13 +106,20 @@ Last modification option for sitemap.
 
 Converts XML into a human readable format
 
-### allowRobots
+### robots
 
-- **Type:** `boolean`
-- **Default:** `true`
+- **Type:** `RobotOption[]`
+- **Default:** `[{ userAgent: '*', allow: '/' }]`
 
-Allow robots crawl (in robots.txt file).
+Robots policy.
 
+RobotOption:
+- **userAgent**: `string`
+- **allow**?: `string | string[]`
+- **disallow**?: `string | string[]`
+- **crawlDelay**?: `number`
+- **cleanParam**?: `string`
+ 
 
 ## License
 

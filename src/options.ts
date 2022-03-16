@@ -10,7 +10,10 @@ export function resolveOptions(userOptions: UserOptions): ResolvedOptions {
       priority: 1,
       lastmod: new Date(),
       readable: false,
-      allowRobots: true,
+      robots: [{
+        userAgent: '*',
+        allow: '/',
+      }],
     },
     userOptions,
   )
