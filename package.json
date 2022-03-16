@@ -25,6 +25,7 @@
     "c8": "^7.11.0",
     "eslint": "^8.10.0",
     "fast-glob": "^3.2.11",
+    "generate-robotstxt": "^8.0.3",
     "sitemap": "^7.1.1",
     "tsup": "^5.12.0",
     "typescript": "^4.6.2",

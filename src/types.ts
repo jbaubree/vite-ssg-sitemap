@@ -39,10 +39,16 @@ interface Options {
    */
   readable: boolean
   /**
-   * Allow robots crawl (in robots.txt file)
-   * @default true
+   * Array of robots policies
    */
-  allowRobots: boolean
+  robotsPolicy?: RobotsPolicy[]
+}
+
+interface RobotsPolicy {
+  userAgent: string
+  disallow?: string | string[]
+  allow?: string | string[]
+  crawlDelay?: number
 }
 
 export type UserOptions = Partial<Options>

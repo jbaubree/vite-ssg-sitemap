@@ -104,14 +104,14 @@ Last modification option for sitemap.
 - **Type:** `boolean`
 - **Default:** `false`
 
-Converts XML into a human readable format
+Converts XML into a human readable format.
 
-### allowRobots
+### robotsPolicy
 
-- **Type:** `boolean`
-- **Default:** `true`
+- **Type:** `array`
+- **Default:** `[{allow: "/", cleanParam: null, crawlDelay: null, userAgent: "*"}]`
 
-Allow robots crawl (in robots.txt file).
+Allow to configure multiple rules for robots.txt. Options are directly maped from [generate-robotstxt](https://github.com/itgalaxy/generate-robotstxt#usage)
 
 
 ## License

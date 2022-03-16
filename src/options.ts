@@ -10,7 +10,6 @@ export function resolveOptions(userOptions: UserOptions): ResolvedOptions {
       priority: 1,
       lastmod: new Date(),
       readable: false,
-      allowRobots: true,
     },
     userOptions,
   )

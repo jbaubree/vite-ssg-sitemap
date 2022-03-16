@@ -20,12 +20,8 @@ describe('Index', () => {
     writeFileSync(TEST_FILE, '')
     const options = {
       dynamicRoutes: ['/'],
-      allowRobots: false,
     }
     generateSitemap(options)
-    expect(readFileSync(ROBOTS_FILE).toString('utf-8')).toEqual(
-      'User-agent: *\nDisallow: /\n\nSitemap: http://localhost/sitemap.xml',
-    )
   })
 
   test('Get sitemap links', async() => {
@@ -54,13 +50,33 @@ describe('Index', () => {
   })
 
   test('Write robots file', async() => {
-    writeRobotFile(ROBOTS_FILE, resolveOptions({}))
-    expect(readFileSync(ROBOTS_FILE).toString('utf-8')).toEqual(
-      'User-agent: *\nAllow: /\n\nSitemap: http://localhost/sitemap.xml',
+    await writeRobotFile(ROBOTS_FILE, resolveOptions({}))
+    expect(readFileSync(ROBOTS_FILE).toString('utf-8')).toBe(
+      'User-agent: *\nAllow: /\nSitemap: http://localhost/sitemap.xml\n',
     )
-    writeRobotFile(ROBOTS_FILE, resolveOptions({ allowRobots: false }))
-    expect(readFileSync(ROBOTS_FILE).toString('utf-8')).toEqual(
-      'User-agent: *\nDisallow: /\n\nSitemap: http://localhost/sitemap.xml',
+    await writeRobotFile(ROBOTS_FILE, resolveOptions({
+      robotsPolicy: [
+        {
+          userAgent: 'googleBot',
+          disallow: '/search/',
+        },
+        {
+          userAgent: 'facebookBot',
+          allow: '/search/',
+        },
+        {
+          userAgent: '*',
+          crawlDelay: 10,
+        },
+        {
+          userAgent: 'OtherBot',
+          allow: ['/allow-for-all-bots', '/allow-only-for-other-bot'],
+          disallow: ['/admin', '/login'],
+        },
+      ],
+    }))
+    expect(readFileSync(ROBOTS_FILE).toString('utf-8')).toBe(
+      'User-agent: googleBot\nDisallow: /search/\n\nUser-agent: facebookBot\nAllow: /search/\n\nUser-agent: *\nCrawl-delay: 10\n\nUser-agent: OtherBot\nAllow: /allow-for-all-bots\nAllow: /allow-only-for-other-bot\nDisallow: /admin\nDisallow: /login\nSitemap: http://localhost/sitemap.xml\n',
     )
   })
 
