@@ -10,7 +10,7 @@ export interface RobotOption {
    */
   allow?: string | string[]
   /**
-   * Disllowed routes for corresponding User-agent.
+   * Disallowed routes for corresponding User-agent.
    * Example: ['/admin', '/confidential']
    */
   disallow?: string | string[]
@@ -37,7 +37,7 @@ interface Options {
   hostname: string
   /**
    * Array of strings with dynamic routes.
-   * Example: ['/routes1', '/route2/subroute']
+   * Example: ['/routes1', '/route2/sub-route']
    * @default []
    */
   dynamicRoutes: string[]
