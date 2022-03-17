@@ -3,10 +3,10 @@
 [![npm version](https://badgen.net/npm/v/vite-ssg-sitemap)](https://www.npmjs.com/package/vite-ssg-sitemap)
 [![monthly downloads](https://badgen.net/npm/dm/vite-ssg-sitemap)](https://www.npmjs.com/package/vite-ssg-sitemap)
 [![types](https://badgen.net/npm/types/vite-ssg-sitemap)](https://github.com/jbaubree/vite-ssg-sitemap/blob/main/src/types.ts)
-[![Coverage Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/jbaubree/c7b3044dcd6c4203f33a3b93ca236ce1/raw/50691ecd5172277c1d3020224856b24883d44bb3/site-plugin-pages-sitemap__heads_master.json)](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/jbaubree/c7b3044dcd6c4203f33a3b93ca236ce1/raw/50691ecd5172277c1d3020224856b24883d44bb3/site-plugin-pages-sitemap__heads_master.json)
 [![license](https://badgen.net/npm/license/vite-ssg-sitemap)](https://github.com/jbaubree/vite-ssg-sitemap/blob/main/LICENSE)
 
-[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/jbaubree/vite-ssg-sitemap)
+[![Coverage Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/jbaubree/c7b3044dcd6c4203f33a3b93ca236ce1/raw/50691ecd5172277c1d3020224856b24883d44bb3/site-plugin-pages-sitemap__heads_master.json)](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/jbaubree/c7b3044dcd6c4203f33a3b93ca236ce1/raw/50691ecd5172277c1d3020224856b24883d44bb3/site-plugin-pages-sitemap__heads_master.json)
+[![CI](https://github.com/jbaubree/vite-ssg-sitemap/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/jbaubree/vite-ssg-sitemap/actions/workflows/ci.yml)
 
 > sitemap generator working with vite-ssg
 
@@ -111,15 +111,12 @@ Converts XML into a human readable format
 - **Type:** `RobotOption[]`
 - **Default:** `[{ userAgent: '*', allow: '/' }]`
 
-Robots policy.
-
 RobotOption:
 - **userAgent**: `string`
 - **allow**?: `string | string[]`
 - **disallow**?: `string | string[]`
 - **crawlDelay**?: `number`
 - **cleanParam**?: `string`
- 
 
 ## License
 
