@@ -18,7 +18,8 @@ export default function generateSitemap(options: UserOptions = {}) {
 
   // sitemap.xml
   const routes = getRoutes(resolvedOptions)
-  if (!routes.length) return
+  if (!routes.length)
+    return
   const formattedSitemap = getFormattedSitemap(resolvedOptions, routes)
 
   const stream = new SitemapStream()
