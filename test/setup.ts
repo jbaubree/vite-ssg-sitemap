@@ -1,5 +1,5 @@
 import { existsSync, rmSync, rmdirSync } from 'fs'
-import { afterEach, beforeAll } from 'vitest'
+import { afterEach, beforeEach } from 'vitest'
 
 import { ROBOTS_FILE, SITEMAP_FILE, SUBPATH_FOLDER, TEST_FILES } from './variables'
 
@@ -16,10 +16,9 @@ const removeFiles = () => {
     rmdirSync(SUBPATH_FOLDER)
 }
 
-beforeAll(() => {
+beforeEach(() => {
   removeFiles()
 })
-
 afterEach(() => {
   removeFiles()
 })
