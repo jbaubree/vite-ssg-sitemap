@@ -36,7 +36,7 @@ export default {
   ssgOptions: {
     onFinished() { generateSitemap() },
   },
-};
+}
 ```
 
 Now, run `npm build` and this will generate sitemap.xml and robots.txt files on your dist folder.
@@ -63,10 +63,10 @@ export default {
     onFinished() {
       const users = await api.get('/users')
       const dynamicRoutes = users.map(user => `/users/${user.name}`)
-      generateSitemap({dynamicRoutes})
+      generateSitemap({ dynamicRoutes })
     },
   },
-};
+}
 ```
 
 You can find a working example in example folder.
