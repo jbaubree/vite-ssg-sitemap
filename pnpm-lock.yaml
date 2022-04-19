@@ -40,7 +40,7 @@ importers:
       typescript: 4.6.3
       vite: 2.9.5
       vite-plugin-pages: 0.23.0
-      vite-ssg: 0.17.11
+      vite-ssg: 0.19.2
       vite-ssg-sitemap: workspace:*
       vue: 3.2.33
       vue-router: 4.0.14
@@ -54,7 +54,7 @@ importers:
       typescript: 4.6.3
       vite: 2.9.5
       vite-plugin-pages: 0.23.0_373ff0796f2ad1831080f280f76c13f4
-      vite-ssg: 0.17.11_161ef10f05d54a8ec14182f85934be65
+      vite-ssg: 0.19.2_161ef10f05d54a8ec14182f85934be65
       vite-ssg-sitemap: link:..
 
 packages:
@@ -2962,8 +2962,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier/2.5.1:
-    resolution: {integrity: sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==}
+  /prettier/2.6.2:
+    resolution: {integrity: sha512-PkUpF+qoXTqhOeWL9fu7As8LXsIUZ1WYaJiY/a7McAQzxjk82OF0tibkFXVCDImZtWxbvojFjerkiLb0/q8mew==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
@@ -3489,8 +3489,8 @@ packages:
       - supports-color
     dev: true
 
-  /vite-ssg/0.17.11_161ef10f05d54a8ec14182f85934be65:
-    resolution: {integrity: sha512-Fr64PausOt65RY6ROfrAGtUuwOoQXMAQLlpSAvCRGeOVZ6BvTyBW3gH+eAkJO3vCJXlHLQJFs8mA74g2Tx48mw==}
+  /vite-ssg/0.19.2_161ef10f05d54a8ec14182f85934be65:
+    resolution: {integrity: sha512-r9UJJ4OTMyu9f4nNe12PMVhVkeXYp1rUKbIl6zIOz5QDYEDgFcq8hZGUMMIAcyHhB4pH5ImmjZd1hJ2fO6hOmg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     peerDependencies:
@@ -3509,7 +3509,7 @@ packages:
       html5parser: 2.0.2
       jsdom: 19.0.0
       kolorist: 1.5.1
-      prettier: 2.5.1
+      prettier: 2.6.2
       vite: 2.9.5
       vue: 3.2.33
       vue-router: 4.0.14_vue@3.2.33
