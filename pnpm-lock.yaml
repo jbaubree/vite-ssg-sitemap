@@ -10,7 +10,7 @@ importers:
       c8: 7.11.2
       eslint: 8.14.0
       fast-glob: 3.2.11
-      pkgroll: 1.1.0
+      pkgroll: 1.1.1
       sitemap: 7.1.1
       typescript: 4.6.4
       vite: 2.9.6
@@ -24,7 +24,7 @@ importers:
       c8: 7.11.2
       eslint: 8.14.0
       fast-glob: 3.2.11
-      pkgroll: 1.1.0_typescript@4.6.4
+      pkgroll: 1.1.1_typescript@4.6.4
       sitemap: 7.1.1
       typescript: 4.6.4
       vite: 2.9.6
@@ -267,11 +267,11 @@ packages:
       slash: 3.0.0
     dev: true
 
-  /@rollup/plugin-commonjs/21.1.0_rollup@2.70.2:
-    resolution: {integrity: sha512-6ZtHx3VHIp2ReNNDxHjuUml6ur+WcQ28N1yHgCQwsbNkQg2suhxGMDQGJOn/KuDxKtd1xuZP5xSTwBA4GQ8hbA==}
-    engines: {node: '>= 8.0.0'}
+  /@rollup/plugin-commonjs/22.0.0_rollup@2.70.2:
+    resolution: {integrity: sha512-Ktvf2j+bAO+30awhbYoCaXpBcyPmJbaEUYClQns/+6SNCYFURbvBiNbWgHITEsIgDDWCDUclWRKEuf8cwZCFoQ==}
+    engines: {node: '>= 12.0.0'}
     peerDependencies:
-      rollup: ^2.38.3
+      rollup: ^2.68.0
     dependencies:
       '@rollup/pluginutils': 3.1.0_rollup@2.70.2
       commondir: 1.0.1
@@ -3159,8 +3159,8 @@ packages:
     engines: {node: '>=8.6'}
     dev: true
 
-  /pkgroll/1.1.0_typescript@4.6.4:
-    resolution: {integrity: sha512-MYP+bKZm6j1U8X0fLfNRHbt3ZKAxX0pecsoRXpkkEHVZhd1SQRpTRglwf3wje0MzcaAn2cuUT9Ony8dBVKdU9Q==}
+  /pkgroll/1.1.1_typescript@4.6.4:
+    resolution: {integrity: sha512-AbQa3qND8GXmAavGCNkqBCMp40GfLHAKi6EbC193xb6rjDpys4LzQxOh4Jg7IPYZ5S8wDw4/uPc+h4E/1f0Gmw==}
     hasBin: true
     peerDependencies:
       typescript: ^4.1
@@ -3169,7 +3169,7 @@ packages:
         optional: true
     dependencies:
       '@rollup/plugin-alias': 3.1.9_rollup@2.70.2
-      '@rollup/plugin-commonjs': 21.1.0_rollup@2.70.2
+      '@rollup/plugin-commonjs': 22.0.0_rollup@2.70.2
       '@rollup/plugin-inject': 4.0.4_rollup@2.70.2
       '@rollup/plugin-json': 4.1.0_rollup@2.70.2
       '@rollup/plugin-node-resolve': 13.2.1_rollup@2.70.2
