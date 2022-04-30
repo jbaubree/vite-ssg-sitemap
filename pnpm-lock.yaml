@@ -10,7 +10,7 @@ importers:
       c8: 7.11.2
       eslint: 8.14.0
       fast-glob: 3.2.11
-      pkgroll: 1.1.2
+      pkgroll: 1.1.3
       sitemap: 7.1.1
       typescript: 4.6.4
       vite: 2.9.6
@@ -24,7 +24,7 @@ importers:
       c8: 7.11.2
       eslint: 8.14.0
       fast-glob: 3.2.11
-      pkgroll: 1.1.2_typescript@4.6.4
+      pkgroll: 1.1.3_typescript@4.6.4
       sitemap: 7.1.1
       typescript: 4.6.4
       vite: 2.9.6
@@ -3159,8 +3159,8 @@ packages:
     engines: {node: '>=8.6'}
     dev: true
 
-  /pkgroll/1.1.2_typescript@4.6.4:
-    resolution: {integrity: sha512-cQSwKaPTOd9ler0dYIMIc4lUqO0x8o07AXYOjg8cn6/yn2PnP5EpOXlgLXODGj8mGaZCpNH27Gdfgz3tWBGCYQ==}
+  /pkgroll/1.1.3_typescript@4.6.4:
+    resolution: {integrity: sha512-WBeaxyT1o1sWBJvsMLVde645uuk0/GdJJJX+7MwfH8E2lpVPZx4UUmTDspX5I0G4UvaH67jBzhYkW2UT1+gYTQ==}
     hasBin: true
     peerDependencies:
       typescript: ^4.1
