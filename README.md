@@ -66,6 +66,27 @@ export default {
 }
 ```
 
+### exclude
+
+- **Type:** `string[]`
+- **Default:** `[]`
+
+Array of strings with excluded routes.
+```js
+export default {
+  plugins: [
+    Vue(),
+  ],
+  ssgOptions: {
+    onFinished() {
+      generateSitemap({
+        exclude: ['/admin', '/private']
+      })
+    },
+  },
+}
+```
+
 You can find a working example in example folder.
 
 ### outDir

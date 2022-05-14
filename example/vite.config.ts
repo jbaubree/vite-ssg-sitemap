@@ -18,6 +18,7 @@ const config = defineConfig({
       generateSitemap({
         hostname: 'https://mywebsite.com/',
         dynamicRoutes,
+        exclude: ['/about'],
         readable: true,
       })
     },
