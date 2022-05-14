@@ -1,6 +1,6 @@
 {
   "name": "vite-ssg-sitemap",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "sitemap generator working with vite-ssg",
   "license": "MIT",
   "main": "dist/index.js",
