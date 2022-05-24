@@ -11,7 +11,7 @@
     "@vitejs/plugin-vue": "2.3.3",
     "@vue/compiler-sfc": "3.2.36",
     "@vueuse/head": "0.7.6",
-    "typescript": "4.6.4",
+    "typescript": "4.7.2",
     "vite": "2.9.9",
     "vite-plugin-pages": "0.23.0",
     "vite-ssg": "0.20.0",
