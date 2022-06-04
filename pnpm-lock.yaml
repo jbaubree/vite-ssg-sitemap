@@ -30,7 +30,7 @@ importers:
       typescript: 4.7.3
       vite: 2.9.9
       vite-plugin-pages: 0.23.0
-      vite-ssg: 0.20.0
+      vite-ssg: 0.20.1
       vite-ssg-sitemap: workspace:*
       vue: 3.2.36
       vue-router: 4.0.15
@@ -44,7 +44,7 @@ importers:
       typescript: 4.7.3
       vite: 2.9.9
       vite-plugin-pages: 0.23.0_cyjpizlboac2xw76ngrtxfz55y
-      vite-ssg: 0.20.0_mhwhgtplr6vpkptytdivdtdami
+      vite-ssg: 0.20.1_mhwhgtplr6vpkptytdivdtdami
       vite-ssg-sitemap: link:..
 
 packages:
@@ -664,12 +664,6 @@ packages:
     hasBin: true
     dev: true
 
-  /acorn/8.7.0:
-    resolution: {integrity: sha512-V/LGr1APy+PXIwKebEWrkZPwoeoF+w1jiOBUmuxuiUIaOHtob8Qc9BTrYo7VuI5fR8tqsy+buA2WFooR5olqvQ==}
-    engines: {node: '>=0.4.0'}
-    hasBin: true
-    dev: true
-
   /acorn/8.7.1:
     resolution: {integrity: sha512-Xx54uLJQZ19lKygFXOWsscKUbsBZW0CPykPhVQdhIeIwrbPmJzqeASDInc8nKBnp/JT6igTs82qPXz069H8I/A==}
     engines: {node: '>=0.4.0'}
@@ -754,7 +748,7 @@ packages:
     dev: true
 
   /asynckit/0.4.0:
-    resolution: {integrity: sha1-x57Zf380y48robyXkLzDZkdLS3k=}
+    resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
     dev: true
 
   /available-typed-arrays/1.0.5:
@@ -812,7 +806,7 @@ packages:
     dev: true
 
   /camel-case/3.0.0:
-    resolution: {integrity: sha1-yjw2iKTpzzpM2nd9xNy8cTJJz3M=}
+    resolution: {integrity: sha512-+MbKztAYHXPr1jNTSKQF52VpcFjwY5RkR7fxksV8Doo4KAYc5Fl4UJRgthBbTmEx8C54DqahhbLJkDwjI3PI/w==}
     dependencies:
       no-case: 2.3.2
       upper-case: 1.1.3
@@ -1031,7 +1025,7 @@ packages:
     dev: true
 
   /delayed-stream/1.0.0:
-    resolution: {integrity: sha1-3zrhmayt+31ECqrgsp4icrJOxhk=}
+    resolution: {integrity: sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==}
     engines: {node: '>=0.4.0'}
     dev: true
 
@@ -2330,7 +2324,7 @@ packages:
         optional: true
     dependencies:
       abab: 2.0.5
-      acorn: 8.7.0
+      acorn: 8.7.1
       acorn-globals: 6.0.0
       cssom: 0.5.0
       cssstyle: 2.3.0
@@ -2418,7 +2412,7 @@ packages:
     dev: true
 
   /levn/0.3.0:
-    resolution: {integrity: sha1-OwmSTt+fCDwEkP3UwLxEIeBHZO4=}
+    resolution: {integrity: sha512-0OO4y2iOHix2W6ujICbKIaEQXvFQHue65vUG3pb5EUomzPI90z9hsA1VsO/dbIIpC53J8gxM9Q4Oho0jrCM/yA==}
     engines: {node: '>= 0.8.0'}
     dependencies:
       prelude-ls: 1.1.2
@@ -2473,7 +2467,7 @@ packages:
     dev: true
 
   /lower-case/1.1.4:
-    resolution: {integrity: sha1-miyr0bno4K6ZOkv31YdcOcQujqw=}
+    resolution: {integrity: sha512-2Fgx1Ycm599x+WGpIYwJOvsjmXFzTSc34IwDWALRA/8AopUKAVPwfJ+h5+f85BCp0PWmmJcWzEpxOpoXycMpdA==}
     dev: true
 
   /lru-cache/6.0.0:
@@ -2703,7 +2697,7 @@ packages:
     dev: true
 
   /p-finally/1.0.0:
-    resolution: {integrity: sha1-P7z7FbiZpEEjs0ttzBi3JDNqLK4=}
+    resolution: {integrity: sha512-LICb2p9CB7FS+0eR1oqWnHhp0FljGLZCWBE9aix0Uye9W8LTQPwMTYVGWQWIw9RdQiDg4+epXQODwIYJtSJaow==}
     engines: {node: '>=4'}
     dev: true
 
@@ -2761,7 +2755,7 @@ packages:
     dev: true
 
   /param-case/2.1.1:
-    resolution: {integrity: sha1-35T9jPZTHs915r75oIWPvHK+Ikc=}
+    resolution: {integrity: sha512-eQE845L6ot89sk2N8liD8HAuH4ca6Vvr7VWAWwt7+kvvG5aBcPmmphQ68JsEG2qa9n1TykS2DLeMt363AAH8/w==}
     dependencies:
       no-case: 2.3.2
     dev: true
@@ -2879,7 +2873,7 @@ packages:
       source-map-js: 1.0.2
 
   /prelude-ls/1.1.2:
-    resolution: {integrity: sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=}
+    resolution: {integrity: sha512-ESF23V4SKG6lVSGZgYNpbsiaAkdab6ZgOxe52p7+Kid3W3u3bxR4Vfd/o21dmN7jSt0IwgZ4v5MUd26FEtXE9w==}
     engines: {node: '>= 0.8.0'}
     dev: true
 
@@ -3366,8 +3360,8 @@ packages:
       - supports-color
     dev: true
 
-  /vite-ssg/0.20.0_mhwhgtplr6vpkptytdivdtdami:
-    resolution: {integrity: sha512-F6B6au8V0aOc9vQ/z875n8AjmGa8vkZGZnuSAidMeJzgEnVYJhIzLL5gUKU336bM9C1GCDJwz5JXmY6YPd3ukg==}
+  /vite-ssg/0.20.1_mhwhgtplr6vpkptytdivdtdami:
+    resolution: {integrity: sha512-fVlI5bXeGDnkuJX3G1Ac+J5jvQ6y8MKzqhHMgOwGzhJMclkhs6JV9ssZSVRN/jk4/sGf9cuTXxCWrR5mbEKkFg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     peerDependencies:
