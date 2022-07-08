@@ -10,7 +10,7 @@ importers:
       pkgroll: 1.3.1
       sitemap-ts: 0.1.6
       typescript: 4.7.4
-      vite: 2.9.13
+      vite: 2.9.14
       vue-tsc: 0.38.3
     devDependencies:
       '@antfu/eslint-config': 0.25.2_4x5o4skxv6sl53vpwefgt23khm
@@ -19,7 +19,7 @@ importers:
       pkgroll: 1.3.1_typescript@4.7.4
       sitemap-ts: 0.1.6
       typescript: 4.7.4
-      vite: 2.9.13
+      vite: 2.9.14
       vue-tsc: 0.38.3_typescript@4.7.4
 
   example:
@@ -28,7 +28,7 @@ importers:
       '@vue/compiler-sfc': 3.2.37
       '@vueuse/head': 0.7.6
       typescript: 4.7.4
-      vite: 2.9.13
+      vite: 2.9.14
       vite-plugin-pages: 0.25.0
       vite-ssg: 0.20.2
       vite-ssg-sitemap: workspace:*
@@ -38,13 +38,13 @@ importers:
       vue: 3.2.37
       vue-router: 4.1.1_vue@3.2.37
     devDependencies:
-      '@vitejs/plugin-vue': 2.3.3_vite@2.9.13+vue@3.2.37
+      '@vitejs/plugin-vue': 2.3.3_vite@2.9.14+vue@3.2.37
       '@vue/compiler-sfc': 3.2.37
       '@vueuse/head': 0.7.6_vue@3.2.37
       typescript: 4.7.4
-      vite: 2.9.13
-      vite-plugin-pages: 0.25.0_an4lgmmlrau24p6bpvoomqupse
-      vite-ssg: 0.20.2_zq52l2i4w6rtiwnfttyvqsjbxa
+      vite: 2.9.14
+      vite-plugin-pages: 0.25.0_ye7sw5nid2es3e4qmkjro6ozy4
+      vite-ssg: 0.20.2_aqm4hwmwjs4uxurbtenkxfgpo4
       vite-ssg-sitemap: link:..
 
 packages:
@@ -509,14 +509,14 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@vitejs/plugin-vue/2.3.3_vite@2.9.13+vue@3.2.37:
+  /@vitejs/plugin-vue/2.3.3_vite@2.9.14+vue@3.2.37:
     resolution: {integrity: sha512-SmQLDyhz+6lGJhPELsBdzXGc+AcaT8stgkbiTFGpXPe8Tl1tJaBw1A6pxDqDuRsVkD8uscrkx3hA7QDOoKYtyw==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       vite: ^2.5.10
       vue: ^3.2.25
     dependencies:
-      vite: 2.9.13
+      vite: 2.9.14
       vue: 3.2.37
     dev: true
 
@@ -3364,7 +3364,7 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite-plugin-pages/0.25.0_an4lgmmlrau24p6bpvoomqupse:
+  /vite-plugin-pages/0.25.0_ye7sw5nid2es3e4qmkjro6ozy4:
     resolution: {integrity: sha512-q0SX2iSw0UrTnivkzsPb19ZxamShq1nE/e/CKOe8+uVg70/e14uJuzKnw7dZ2omPjmV9Lhks38nzJL6RDRGmeA==}
     peerDependencies:
       '@vue/compiler-sfc': ^2.7.0 || ^3.0.0
@@ -3382,13 +3382,13 @@ packages:
       json5: 2.2.1
       local-pkg: 0.4.1
       picocolors: 1.0.0
-      vite: 2.9.13
+      vite: 2.9.14
       yaml: 2.1.1
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /vite-ssg/0.20.2_zq52l2i4w6rtiwnfttyvqsjbxa:
+  /vite-ssg/0.20.2_aqm4hwmwjs4uxurbtenkxfgpo4:
     resolution: {integrity: sha512-XtBgJEDrN9cL6pgzXvThrTS7Pm5zwZZnBt50EmL/O+QbdhD/ZjCbcp4GmIrWFBWjVBFcgfwgPccmWv3DAF6s/w==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -3410,7 +3410,7 @@ packages:
       kolorist: 1.5.1
       p-queue: 6.6.2
       prettier: 2.7.1
-      vite: 2.9.13
+      vite: 2.9.14
       vue: 3.2.37
       vue-router: 4.1.1_vue@3.2.37
       yargs: 17.5.1
@@ -3421,8 +3421,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /vite/2.9.13:
-    resolution: {integrity: sha512-AsOBAaT0AD7Mhe8DuK+/kE4aWYFMx/i0ZNi98hJclxb4e0OhQcZYUrvLjIaQ8e59Ui7txcvKMiJC1yftqpQoDw==}
+  /vite/2.9.14:
+    resolution: {integrity: sha512-P/UCjSpSMcE54r4mPak55hWAZPlyfS369svib/gpmz8/01L822lMPOJ/RYW6tLCe1RPvMvOsJ17erf55bKp4Hw==}
     engines: {node: '>=12.2.0'}
     hasBin: true
     peerDependencies:
