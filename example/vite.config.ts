@@ -7,8 +7,12 @@ import { getNames } from './src/api/fakeApi'
 
 const config = defineConfig({
   plugins: [
-    Vue(),
-    Pages(),
+    Vue({
+      include: [/\.vue$/, /\.md$/],
+    }),
+    Pages({
+      extensions: ['vue', 'js', 'md']
+    }),
   ],
   ssgOptions: {
     dirStyle: 'nested',
@@ -20,6 +24,7 @@ const config = defineConfig({
         dynamicRoutes,
         exclude: ['/about'],
         readable: true,
+        extentions: ['html', 'md'],
       })
     },
   },

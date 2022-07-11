@@ -1,6 +1,7 @@
 {
   "private": true,
   "scripts": {
+    "dev": "vite",
     "build": "vite-ssg build"
   },
   "dependencies": {
