@@ -8,7 +8,7 @@ importers:
       '@types/node': 17.0.25
       eslint: 8.19.0
       pkgroll: 1.3.1
-      sitemap-ts: 0.1.6
+      sitemap-ts: 0.2.1
       typescript: 4.7.4
       vite: 2.9.14
       vue-tsc: 0.38.5
@@ -17,7 +17,7 @@ importers:
       '@types/node': 17.0.25
       eslint: 8.19.0
       pkgroll: 1.3.1_typescript@4.7.4
-      sitemap-ts: 0.1.6
+      sitemap-ts: 0.2.1
       typescript: 4.7.4
       vite: 2.9.14
       vue-tsc: 0.38.5_typescript@4.7.4
@@ -379,6 +379,12 @@ packages:
       '@types/node': 17.0.25
     dev: true
 
+  /@types/sax/1.2.4:
+    resolution: {integrity: sha512-pSAff4IAxJjfAXUG6tFkO7dsSbTmf8CtUpfhhZ5VhkRpC4628tJhh3+V6H1E+/Gs9piSzYKT5yzHO5M4GG9jkw==}
+    dependencies:
+      '@types/node': 17.0.25
+    dev: true
+
   /@types/unist/2.0.6:
     resolution: {integrity: sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==}
     dev: true
@@ -705,6 +711,10 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       color-convert: 2.0.1
+    dev: true
+
+  /arg/5.0.2:
+    resolution: {integrity: sha512-PYjyFOLKQ9y57JvQ6QLo8dAgNqswh8M1RMJYdQduT6xbWSgK36P/Z/v+p888pM69jMMfS8Xd8F6I1kQ/I9HUGg==}
     dev: true
 
   /argparse/2.0.1:
@@ -3045,6 +3055,10 @@ packages:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
     dev: true
 
+  /sax/1.2.4:
+    resolution: {integrity: sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==}
+    dev: true
+
   /saxes/6.0.0:
     resolution: {integrity: sha512-xAg7SOnEhrm5zI3puOOKyy1OMcMlIJZYNJY7xLBwSze0UjhPLnWfj2GF2EpT0jmzaJKIWKHLsaSSajf35bcYnA==}
     engines: {node: '>=v12.22.7'}
@@ -3090,8 +3104,23 @@ packages:
       object-inspect: 1.12.0
     dev: true
 
-  /sitemap-ts/0.1.6:
-    resolution: {integrity: sha512-/uqtODw2Ky0cFbDGyUnbWvsXWIJRJ+6egK5iQoHV1yR2vtCipz1TRGcgom4FWew6FhGuus//WJSwfHzkmMh5gg==}
+  /sitemap-ts/0.2.1:
+    resolution: {integrity: sha512-MIUBTYHWpFx0oQoHQIqvYhWHM57GShfhTzJK9mJFeVMzpCUV/mnGa0E2XkHeGSjDXeIXgkl7YZF9Lj4lPWVpSw==}
+    dependencies:
+      fast-glob: 3.2.11
+      sitemap: 7.1.1
+      xml-formatter: 2.6.1
+    dev: true
+
+  /sitemap/7.1.1:
+    resolution: {integrity: sha512-mK3aFtjz4VdJN0igpIJrinf3EO8U8mxOPsTBzSsy06UtjZQJ3YY3o3Xa7zSc5nMqcMrRwlChHZ18Kxg0caiPBg==}
+    engines: {node: '>=12.0.0', npm: '>=5.6.0'}
+    hasBin: true
+    dependencies:
+      '@types/node': 17.0.25
+      '@types/sax': 1.2.4
+      arg: 5.0.2
+      sax: 1.2.4
     dev: true
 
   /slash/3.0.0:
@@ -3598,9 +3627,21 @@ packages:
         optional: true
     dev: true
 
+  /xml-formatter/2.6.1:
+    resolution: {integrity: sha512-dOiGwoqm8y22QdTNI7A+N03tyVfBlQ0/oehAzxIZtwnFAHGeSlrfjF73YQvzSsa/Kt6+YZasKsrdu6OIpuBggw==}
+    engines: {node: '>= 10'}
+    dependencies:
+      xml-parser-xo: 3.2.0
+    dev: true
+
   /xml-name-validator/4.0.0:
     resolution: {integrity: sha512-ICP2e+jsHvAj2E2lIHxa5tjXRlKDJo4IdvPvCXbXQGdzSfmSpNVyIKMvoZHjDY9DP0zV17iI85o90vRFXNccRw==}
     engines: {node: '>=12'}
+    dev: true
+
+  /xml-parser-xo/3.2.0:
+    resolution: {integrity: sha512-8LRU6cq+d7mVsoDaMhnkkt3CTtAs4153p49fRo+HIB3I1FD1o5CeXRjRH29sQevIfVJIcPjKSsPU/+Ujhq09Rg==}
+    engines: {node: '>= 10'}
     dev: true
 
   /xmlchars/2.2.0:
