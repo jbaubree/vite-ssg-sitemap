@@ -11,7 +11,7 @@ const config = defineConfig({
       include: [/\.vue$/, /\.md$/],
     }),
     Pages({
-      extensions: ['vue', 'js', 'md']
+      extensions: ['vue', 'js', 'md'],
     }),
   ],
   ssgOptions: {
