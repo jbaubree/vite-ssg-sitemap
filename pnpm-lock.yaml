@@ -5,19 +5,19 @@ importers:
   .:
     specifiers:
       '@antfu/eslint-config': 0.25.2
-      '@types/node': 18.0.6
+      '@types/node': 18.6.4
       eslint: 8.21.0
       pkgroll: 1.4.0
-      sitemap-ts: 0.2.1
+      sitemap-ts: 0.2.2
       typescript: 4.7.4
       vite: 3.0.4
       vue-tsc: 0.39.5
     devDependencies:
       '@antfu/eslint-config': 0.25.2_qugx7qdu5zevzvxaiqyxfiwquq
-      '@types/node': 18.0.6
+      '@types/node': 18.6.4
       eslint: 8.21.0
       pkgroll: 1.4.0_typescript@4.7.4
-      sitemap-ts: 0.2.1
+      sitemap-ts: 0.2.2
       typescript: 4.7.4
       vite: 3.0.4
       vue-tsc: 0.39.5_typescript@4.7.4
@@ -382,8 +382,8 @@ packages:
     resolution: {integrity: sha512-wANk6fBrUwdpY4isjWrKTufkrXdu1D2YHCot2fD/DfWxF5sMrVSA+KN7ydckvaTCh0HiqX9IVl0L5/ZoXg5M7w==}
     dev: true
 
-  /@types/node/18.0.6:
-    resolution: {integrity: sha512-/xUq6H2aQm261exT6iZTMifUySEt4GR5KX8eYyY+C4MSNPqSh9oNIP7tz2GLKTlFaiBbgZNxffoR3CVRG+cljw==}
+  /@types/node/18.6.4:
+    resolution: {integrity: sha512-I4BD3L+6AWiUobfxZ49DlU43gtI+FTHSv9pE2Zekg6KjMpre4ByusaljW3vYSLJrvQ1ck1hUaeVu8HVlY3vzHg==}
     dev: true
 
   /@types/normalize-package-data/2.4.1:
@@ -393,13 +393,13 @@ packages:
   /@types/resolve/1.17.1:
     resolution: {integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==}
     dependencies:
-      '@types/node': 18.0.6
+      '@types/node': 18.6.4
     dev: true
 
   /@types/sax/1.2.4:
     resolution: {integrity: sha512-pSAff4IAxJjfAXUG6tFkO7dsSbTmf8CtUpfhhZ5VhkRpC4628tJhh3+V6H1E+/Gs9piSzYKT5yzHO5M4GG9jkw==}
     dependencies:
-      '@types/node': 18.0.6
+      '@types/node': 18.6.4
     dev: true
 
   /@types/unist/2.0.6:
@@ -3410,8 +3410,8 @@ packages:
       object-inspect: 1.12.0
     dev: true
 
-  /sitemap-ts/0.2.1:
-    resolution: {integrity: sha512-MIUBTYHWpFx0oQoHQIqvYhWHM57GShfhTzJK9mJFeVMzpCUV/mnGa0E2XkHeGSjDXeIXgkl7YZF9Lj4lPWVpSw==}
+  /sitemap-ts/0.2.2:
+    resolution: {integrity: sha512-ktIsjvwDdSdIS7WJ1N58Fg2ZBvUCumSdC6GmYvFbVODwnAq6SgWQ71fdldc2sdwZgR0T7Jt++kUMT3Mquz66Rw==}
     dependencies:
       fast-glob: 3.2.11
       sitemap: 7.1.1
