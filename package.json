@@ -1,6 +1,7 @@
 {
   "name": "vite-ssg-sitemap",
   "version": "0.4.0",
+  "packageManager": "pnpm@7.9.5",
   "description": "sitemap generator working with vite-ssg",
   "license": "MIT",
   "main": "dist/index.js",
@@ -11,8 +12,8 @@
   ],
   "scripts": {
     "build": "pkgroll",
-    "dev": "npm run build -- --watch",
-    "example:build": "npm -C example run build",
+    "dev": "pnpm run build -- --watch",
+    "example:build": "pnpm -C example run build",
     "lint": "eslint \"**/*.{vue,ts,js}\"",
     "release": "npx bumpp --commit --tag --push && npm publish",
     "typecheck": "vue-tsc --noEmit"
