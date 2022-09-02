@@ -29,7 +29,7 @@ importers:
       '@vueuse/head': 0.7.9
       typescript: 4.8.2
       vite: 3.0.9
-      vite-plugin-pages: 0.25.0
+      vite-plugin-pages: 0.26.0
       vite-ssg: 0.20.2
       vite-ssg-sitemap: workspace:*
       vue: 3.2.38
@@ -43,7 +43,7 @@ importers:
       '@vueuse/head': 0.7.9_vue@3.2.38
       typescript: 4.8.2
       vite: 3.0.9
-      vite-plugin-pages: 0.25.0_wiqxe6lvsihpzczlnrpvdo52gi
+      vite-plugin-pages: 0.26.0_wiqxe6lvsihpzczlnrpvdo52gi
       vite-ssg: 0.20.2_bfq3gzdvlavb2sn3qqvybkgwxu
       vite-ssg-sitemap: link:..
 
@@ -3470,8 +3470,8 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite-plugin-pages/0.25.0_wiqxe6lvsihpzczlnrpvdo52gi:
-    resolution: {integrity: sha512-q0SX2iSw0UrTnivkzsPb19ZxamShq1nE/e/CKOe8+uVg70/e14uJuzKnw7dZ2omPjmV9Lhks38nzJL6RDRGmeA==}
+  /vite-plugin-pages/0.26.0_wiqxe6lvsihpzczlnrpvdo52gi:
+    resolution: {integrity: sha512-yJZvwHEt7puYIf19S89IvkDsWPjWleSied4H8hmdW6i8buCA93z1UAU1ipW1d8fNKrC4FzXsUHHbPm6+kl1p9w==}
     peerDependencies:
       '@vue/compiler-sfc': ^2.7.0 || ^3.0.0
       vite: ^2.0.0 || ^3.0.0-0
