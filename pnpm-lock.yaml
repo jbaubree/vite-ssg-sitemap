@@ -26,7 +26,7 @@ importers:
     specifiers:
       '@vitejs/plugin-vue': 3.1.0
       '@vue/compiler-sfc': 3.2.39
-      '@vueuse/head': 0.7.10
+      '@vueuse/head': 0.7.11
       typescript: 4.8.3
       vite: 3.1.0
       vite-plugin-pages: 0.26.0
@@ -40,11 +40,11 @@ importers:
     devDependencies:
       '@vitejs/plugin-vue': 3.1.0_vite@3.1.0+vue@3.2.39
       '@vue/compiler-sfc': 3.2.39
-      '@vueuse/head': 0.7.10_vue@3.2.39
+      '@vueuse/head': 0.7.11_vue@3.2.39
       typescript: 4.8.3
       vite: 3.1.0
       vite-plugin-pages: 0.26.0_6igbc34rdygfc6m44bomdw5yyu
-      vite-ssg: 0.20.2_z52wmo2grw7w4b644mhfebeo5m
+      vite-ssg: 0.20.2_v5r2lgwirk52grjlwxotdgceem
       vite-ssg-sitemap: link:..
 
 packages:
@@ -687,12 +687,26 @@ packages:
   /@vue/shared/3.2.39:
     resolution: {integrity: sha512-D3dl2ZB9qE6mTuWPk9RlhDeP1dgNRUKC3NJxji74A4yL8M2MwlhLKUC/49WHjrNzSPug58fWx/yFbaTzGAQSBw==}
 
-  /@vueuse/head/0.7.10_vue@3.2.39:
-    resolution: {integrity: sha512-hkvxpl99xiziDV7qAMtuzTZt5oHn6sOpdUuSlT27KhB/jVSpPrrIUKD1L/0JhLw8gCQoHGxmWalc3P7AYuzkoA==}
+  /@vueuse/head/0.7.11_vue@3.2.39:
+    resolution: {integrity: sha512-qW2VbJnQ7c1nHqt1wWQYtPf6pMKghcBsCGQd76zFSzKZXncjOYV1I5dZcmAdj3E30JP0WKWCItVbV/cgSAPipA==}
     peerDependencies:
       vue: '>=2.7 || >=3'
     dependencies:
+      '@zhead/schema-vue': 0.7.1_vue@3.2.39
       vue: 3.2.39
+    dev: true
+
+  /@zhead/schema-vue/0.7.1_vue@3.2.39:
+    resolution: {integrity: sha512-puEmNJOjfC5IRJqc5p0GEemWP1B25YYRMZ2RM10UrJXGjR+cGOZ+PYQHoBIl9Nf5kJVzhokg1H99HE6Wnyx+qA==}
+    peerDependencies:
+      vue: '>=2.7 || >=3'
+    dependencies:
+      '@zhead/schema': 0.7.1
+      vue: 3.2.39
+    dev: true
+
+  /@zhead/schema/0.7.1:
+    resolution: {integrity: sha512-3FjTUj8YBN45PCW4YSosV9LjBu6HnKetk0aYtaZ7HffgpSlAIl/eCaem8T34KJZ7/lRsvoGPcDDkaAzyvGqi0g==}
     dev: true
 
   /abab/2.0.6:
@@ -3709,7 +3723,7 @@ packages:
       - supports-color
     dev: true
 
-  /vite-ssg/0.20.2_z52wmo2grw7w4b644mhfebeo5m:
+  /vite-ssg/0.20.2_v5r2lgwirk52grjlwxotdgceem:
     resolution: {integrity: sha512-XtBgJEDrN9cL6pgzXvThrTS7Pm5zwZZnBt50EmL/O+QbdhD/ZjCbcp4GmIrWFBWjVBFcgfwgPccmWv3DAF6s/w==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -3723,7 +3737,7 @@ packages:
       critters:
         optional: true
     dependencies:
-      '@vueuse/head': 0.7.10_vue@3.2.39
+      '@vueuse/head': 0.7.11_vue@3.2.39
       fs-extra: 10.1.0
       html-minifier: 4.0.0
       html5parser: 2.0.2
