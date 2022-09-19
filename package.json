@@ -19,7 +19,7 @@
     "typecheck": "vue-tsc --noEmit"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "0.26.3",
+    "@antfu/eslint-config": "0.27.0",
     "@types/node": "18.7.13",
     "eslint": "8.23.1",
     "pkgroll": "1.4.0",
