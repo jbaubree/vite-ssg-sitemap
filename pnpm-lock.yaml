@@ -24,7 +24,7 @@ importers:
 
   example:
     specifiers:
-      '@vitejs/plugin-vue': 2.3.2
+      '@vitejs/plugin-vue': 2.3.4
       '@vue/compiler-sfc': 3.2.0
       '@vueuse/head': 0.7.12
       typescript: 4.8.3
@@ -38,7 +38,7 @@ importers:
       vue: 3.2.25
       vue-router: 4.1.5_vue@3.2.25
     devDependencies:
-      '@vitejs/plugin-vue': 2.3.2_vite@2.9.13+vue@3.2.25
+      '@vitejs/plugin-vue': 2.3.4_vite@2.9.13+vue@3.2.25
       '@vue/compiler-sfc': 3.2.0
       '@vueuse/head': 0.7.12_vue@3.2.25
       typescript: 4.8.3
@@ -540,8 +540,8 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@vitejs/plugin-vue/2.3.2_vite@2.9.13+vue@3.2.25:
-    resolution: {integrity: sha512-umyypfSHS4kQLdYAnJHhaASq7FRzNCdvcRoQ3uYGNk1/M4a+hXUd7ysN7BLhCrWH6uBokyCkFeUAaFDzSaaSrQ==}
+  /@vitejs/plugin-vue/2.3.4_vite@2.9.13+vue@3.2.25:
+    resolution: {integrity: sha512-IfFNbtkbIm36O9KB8QodlwwYvTEsJb4Lll4c2IwB3VHc2gie2mSPtSzL0eYay7X2jd/2WX02FjSGTWR6OPr/zg==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       vite: ^2.5.10
