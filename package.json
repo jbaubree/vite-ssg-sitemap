@@ -1,6 +1,6 @@
 {
   "name": "vite-ssg-sitemap",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "packageManager": "pnpm@7.12.1",
   "description": "sitemap generator working with vite-ssg",
   "license": "MIT",
