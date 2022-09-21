@@ -32,3 +32,6 @@ jobs:
 
       - name: Lint
         run: pnpm lint
+
+      - name: Build example
+        run: pnpm example:build
