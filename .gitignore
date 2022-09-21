@@ -3,3 +3,4 @@ node_modules
 coverage
 dist
 public
+.vite-ssg-temp

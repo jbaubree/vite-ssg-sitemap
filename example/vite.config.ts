@@ -24,7 +24,7 @@ const config = defineConfig({
         dynamicRoutes,
         exclude: ['/about'],
         readable: true,
-        extensions: ['html', 'md'],
+        extensions: ['html'],
       })
     },
   },
