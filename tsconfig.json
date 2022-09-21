@@ -3,6 +3,7 @@
     "module": "ESNext",
     "target": "es2017",
     "lib": ["ESNext", "DOM"],
+    "jsx": "preserve",
     "esModuleInterop": true,
     "strict": true,
     "strictNullChecks": true,

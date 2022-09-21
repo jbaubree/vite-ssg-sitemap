@@ -5,7 +5,7 @@ import generateSitemap from 'vite-ssg-sitemap'
 
 import { getNames } from './src/api/fakeApi'
 
-const config = defineConfig({
+export default defineConfig({
   plugins: [
     Vue({
       include: [/\.vue$/, /\.md$/],
@@ -29,5 +29,3 @@ const config = defineConfig({
     },
   },
 })
-
-export default config
