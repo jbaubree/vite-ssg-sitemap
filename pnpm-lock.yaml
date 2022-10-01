@@ -25,7 +25,7 @@ importers:
   example:
     specifiers:
       '@vitejs/plugin-vue': 3.1.0
-      '@vueuse/head': 0.7.12
+      '@vueuse/head': 0.7.13
       typescript: 4.8.4
       vite: 3.1.4
       vite-plugin-pages: 0.26.0
@@ -34,7 +34,7 @@ importers:
       vue: 3.2.40
       vue-router: 4.1.5
     dependencies:
-      '@vueuse/head': 0.7.12_vue@3.2.40
+      '@vueuse/head': 0.7.13_vue@3.2.40
       vue: 3.2.40
       vue-router: 4.1.5_vue@3.2.40
     devDependencies:
@@ -42,7 +42,7 @@ importers:
       typescript: 4.8.4
       vite: 3.1.4
       vite-plugin-pages: 0.26.0_vite@3.1.4
-      vite-ssg: 0.20.2_2hrv2cw5fcmq6vwsossdja5ray
+      vite-ssg: 0.20.2_4qrwgnyqtb2f4tpaptiwcos2ve
       vite-ssg-sitemap: link:..
 
 packages:
@@ -682,8 +682,8 @@ packages:
   /@vue/shared/3.2.40:
     resolution: {integrity: sha512-0PLQ6RUtZM0vO3teRfzGi4ltLUO5aO+kLgwh4Um3THSR03rpQWLTuRCkuO5A41ITzwdWeKdPHtSARuPkoo5pCQ==}
 
-  /@vueuse/head/0.7.12_vue@3.2.40:
-    resolution: {integrity: sha512-sRcrE6VohiHInQR0sB0U8H8x2hAKdo+AIhd5PWBLx1jUp2vwyeQyA/4rlCzP5CMDB8z61MLvsOCApFJrRMRtTQ==}
+  /@vueuse/head/0.7.13_vue@3.2.40:
+    resolution: {integrity: sha512-VHSla/0uOAUii/mz+NWLFKMrMbz/lQoYxEcpS/ri7drepYjdB5QdbTnD2KdOX8EmQM/b07qpjKanr7erGrd3XA==}
     peerDependencies:
       vue: '>=2.7 || >=3'
     dependencies:
@@ -3615,7 +3615,7 @@ packages:
       - supports-color
     dev: true
 
-  /vite-ssg/0.20.2_2hrv2cw5fcmq6vwsossdja5ray:
+  /vite-ssg/0.20.2_4qrwgnyqtb2f4tpaptiwcos2ve:
     resolution: {integrity: sha512-XtBgJEDrN9cL6pgzXvThrTS7Pm5zwZZnBt50EmL/O+QbdhD/ZjCbcp4GmIrWFBWjVBFcgfwgPccmWv3DAF6s/w==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -3629,7 +3629,7 @@ packages:
       critters:
         optional: true
     dependencies:
-      '@vueuse/head': 0.7.12_vue@3.2.40
+      '@vueuse/head': 0.7.13_vue@3.2.40
       fs-extra: 10.1.0
       html-minifier: 4.0.0
       html5parser: 2.0.2
