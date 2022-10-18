@@ -28,7 +28,7 @@ importers:
       '@vueuse/head': 0.9.8
       typescript: 4.8.4
       vite: 3.1.8
-      vite-plugin-pages: 0.26.0
+      vite-plugin-pages: 0.27.0
       vite-ssg: 0.21.1
       vite-ssg-sitemap: workspace:*
       vue: 3.2.41
@@ -41,7 +41,7 @@ importers:
       '@vitejs/plugin-vue': 3.1.2_vite@3.1.8+vue@3.2.41
       typescript: 4.8.4
       vite: 3.1.8
-      vite-plugin-pages: 0.26.0_vite@3.1.8
+      vite-plugin-pages: 0.27.0_vite@3.1.8
       vite-ssg: 0.21.1_3dlpmnjq3xaq6x2ip7web643qm
       vite-ssg-sitemap: link:..
 
@@ -3566,8 +3566,8 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite-plugin-pages/0.26.0_vite@3.1.8:
-    resolution: {integrity: sha512-yJZvwHEt7puYIf19S89IvkDsWPjWleSied4H8hmdW6i8buCA93z1UAU1ipW1d8fNKrC4FzXsUHHbPm6+kl1p9w==}
+  /vite-plugin-pages/0.27.0_vite@3.1.8:
+    resolution: {integrity: sha512-fLuBd8U9jcfB+MXj9yEsq6AHa0AHCP4Fhi7LCcCWJeL28Lx3o5B0uoBUhCZ+xwsnNs4GZwPOfgBG3yHKMsMNnA==}
     peerDependencies:
       '@vue/compiler-sfc': ^2.7.0 || ^3.0.0
       vite: ^2.0.0 || ^3.0.0-0
@@ -3584,7 +3584,7 @@ packages:
       local-pkg: 0.4.2
       picocolors: 1.0.0
       vite: 3.1.8
-      yaml: 2.1.1
+      yaml: 2.1.3
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -3848,11 +3848,11 @@ packages:
     dependencies:
       eslint-visitor-keys: 3.3.0
       lodash: 4.17.21
-      yaml: 2.1.1
+      yaml: 2.1.3
     dev: true
 
-  /yaml/2.1.1:
-    resolution: {integrity: sha512-o96x3OPo8GjWeSLF+wOAbrPfhFOGY0W00GNaxCDv+9hkcDJEnev1yh8S7pgHF0ik6zc8sQLuL8hjHjJULZp8bw==}
+  /yaml/2.1.3:
+    resolution: {integrity: sha512-AacA8nRULjKMX2DvWvOAdBZMOfQlypSFkjcOcu9FalllIDJ1kvlREzcdIZmidQUqqeMv7jorHjq2HlLv/+c2lg==}
     engines: {node: '>= 14'}
     dev: true
 
