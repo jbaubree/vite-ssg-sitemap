@@ -5,7 +5,7 @@ importers:
   .:
     specifiers:
       '@antfu/eslint-config': 0.27.0
-      '@types/node': 18.11.6
+      '@types/node': 18.11.7
       eslint: 8.26.0
       pkgroll: 1.4.0
       sitemap-ts: 1.1.0
@@ -14,7 +14,7 @@ importers:
       vue-tsc: 0.40.13
     devDependencies:
       '@antfu/eslint-config': 0.27.0_wyqvi574yv7oiwfeinomdzmc3m
-      '@types/node': 18.11.6
+      '@types/node': 18.11.7
       eslint: 8.26.0
       pkgroll: 1.4.0_typescript@4.8.4
       sitemap-ts: 1.1.0
@@ -388,8 +388,8 @@ packages:
     resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
     dev: true
 
-  /@types/node/18.11.6:
-    resolution: {integrity: sha512-j3CEDa2vd96K0AXF8Wur7UucACvnjkk8hYyQAHhUNciabZLDl9nfAEVUSwmh245OOZV15bRA3Y590Gi5jUcDJg==}
+  /@types/node/18.11.7:
+    resolution: {integrity: sha512-LhFTglglr63mNXUSRYD8A+ZAIu5sFqNJ4Y2fPuY7UlrySJH87rRRlhtVmMHplmfk5WkoJGmDjE9oiTfyX94CpQ==}
     dev: true
 
   /@types/normalize-package-data/2.4.1:
@@ -399,13 +399,13 @@ packages:
   /@types/resolve/1.17.1:
     resolution: {integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==}
     dependencies:
-      '@types/node': 18.11.6
+      '@types/node': 18.11.7
     dev: true
 
   /@types/sax/1.2.4:
     resolution: {integrity: sha512-pSAff4IAxJjfAXUG6tFkO7dsSbTmf8CtUpfhhZ5VhkRpC4628tJhh3+V6H1E+/Gs9piSzYKT5yzHO5M4GG9jkw==}
     dependencies:
-      '@types/node': 18.11.6
+      '@types/node': 18.11.7
     dev: true
 
   /@types/unist/2.0.6:
