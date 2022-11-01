@@ -29,7 +29,7 @@ importers:
       typescript: 4.8.4
       vite: 3.2.2
       vite-plugin-pages: 0.27.1
-      vite-ssg: 0.21.1
+      vite-ssg: 0.21.2
       vite-ssg-sitemap: workspace:*
       vue: 3.2.41
       vue-router: 4.1.6
@@ -42,7 +42,7 @@ importers:
       typescript: 4.8.4
       vite: 3.2.2
       vite-plugin-pages: 0.27.1_vite@3.2.2
-      vite-ssg: 0.21.1_7wp2izbydexmu6yagp3mx4yxsy
+      vite-ssg: 0.21.2_7wp2izbydexmu6yagp3mx4yxsy
       vite-ssg-sitemap: link:..
 
 packages:
@@ -3609,8 +3609,8 @@ packages:
       - supports-color
     dev: true
 
-  /vite-ssg/0.21.1_7wp2izbydexmu6yagp3mx4yxsy:
-    resolution: {integrity: sha512-P39lT+ndBbN83SsfrDSc/uU9IHp7BUjYy7ly3I0jB0L+CvI1/R/bJTOkFikw2mS0FDkPTUN2bCqD6VTshtsO2w==}
+  /vite-ssg/0.21.2_7wp2izbydexmu6yagp3mx4yxsy:
+    resolution: {integrity: sha512-srcxakrqBaubPr6KuhMmkmrdm1Ye1zIClWOpV3TSk4viyy0QymZWwfPAPXjCwjzmPDY/QVHTffuMTNjoM4xkbA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     peerDependencies:
