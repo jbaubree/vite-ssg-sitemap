@@ -24,7 +24,7 @@
     "eslint": "8.27.0",
     "pkgroll": "1.4.0",
     "sitemap-ts": "1.1.0",
-    "typescript": "4.8.4",
+    "typescript": "4.9.3",
     "vite": "3.2.4",
     "vue-tsc": "0.40.13"
   }
