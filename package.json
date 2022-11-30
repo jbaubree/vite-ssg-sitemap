@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "0.33.1",
-    "@types/node": "18.11.9",
+    "@types/node": "18.11.10",
     "eslint": "8.28.0",
     "pkgroll": "1.6.0",
     "sitemap-ts": "1.1.0",
