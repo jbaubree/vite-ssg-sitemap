@@ -7,7 +7,7 @@ importers:
       '@antfu/eslint-config': 0.33.1
       '@types/node': 18.11.10
       eslint: 8.29.0
-      pkgroll: 1.6.0
+      pkgroll: 1.7.0
       sitemap-ts: 1.1.0
       typescript: 4.9.3
       vite: 3.2.5
@@ -16,7 +16,7 @@ importers:
       '@antfu/eslint-config': 0.33.1_s5ps7njkmjlaqajutnox5ntcla
       '@types/node': 18.11.10
       eslint: 8.29.0
-      pkgroll: 1.6.0_typescript@4.9.3
+      pkgroll: 1.7.0_typescript@4.9.3
       sitemap-ts: 1.1.0
       typescript: 4.9.3
       vite: 3.2.5_@types+node@18.11.10
@@ -2889,8 +2889,8 @@ packages:
     engines: {node: '>=8.6'}
     dev: true
 
-  /pkgroll/1.6.0_typescript@4.9.3:
-    resolution: {integrity: sha512-gVr6+WPpVHnm2WxaVImyA3tocXLtUI/cOB8r3p7PR7mMDycCFrsKyw46zCGcs3XU1fXxnC4oe6k8f4/3X8SRzw==}
+  /pkgroll/1.7.0_typescript@4.9.3:
+    resolution: {integrity: sha512-rP6cx/LTD6fXabCTY72aAJbJU0T0MKkHIJmsT8yLBvZRc2zWllv2XkjkHejcuuxTCtoZpyV0+RTX9ZupK/psBg==}
     hasBin: true
     peerDependencies:
       typescript: ^4.1
@@ -3160,6 +3160,7 @@ packages:
 
   /sourcemap-codec/1.4.8:
     resolution: {integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==}
+    deprecated: Please use @jridgewell/sourcemap-codec instead
 
   /spdx-correct/3.1.1:
     resolution: {integrity: sha512-cOYcUWwhCuHCXi49RhFRCyJEK3iPj1Ziz9DpViV3tbZOwXD49QzIN3MpOLJNxh2qwq2lJJZaKMVw9qNi4jTC0w==}
