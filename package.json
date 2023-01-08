@@ -23,7 +23,7 @@
     "@types/node": "18.11.18",
     "eslint": "8.31.0",
     "pkgroll": "1.8.0",
-    "sitemap-ts": "1.1.0",
+    "sitemap-ts": "1.2.2",
     "typescript": "4.9.4",
     "vite": "3.2.5",
     "vue-tsc": "0.40.13"
