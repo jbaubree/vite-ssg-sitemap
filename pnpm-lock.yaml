@@ -8,7 +8,7 @@ importers:
       '@types/node': 18.11.18
       eslint: 8.31.0
       pkgroll: 1.8.0
-      sitemap-ts: 1.1.0
+      sitemap-ts: 1.2.2
       typescript: 4.9.4
       vite: 3.2.5
       vue-tsc: 0.40.13
@@ -17,7 +17,7 @@ importers:
       '@types/node': 18.11.18
       eslint: 8.31.0
       pkgroll: 1.8.0_typescript@4.9.4
-      sitemap-ts: 1.1.0
+      sitemap-ts: 1.2.2
       typescript: 4.9.4
       vite: 3.2.5_@types+node@18.11.18
       vue-tsc: 0.40.13_typescript@4.9.4
@@ -134,6 +134,10 @@ packages:
       - eslint-import-resolver-webpack
       - supports-color
       - typescript
+    dev: true
+
+  /@antfu/utils/0.7.2:
+    resolution: {integrity: sha512-vy9fM3pIxZmX07dL+VX1aZe7ynZ+YyB0jY+jE6r3hOK6GNY2t6W8rzpFC4tgpbXUYABkFQwgJq2XYXlxbXAI0g==}
     dev: true
 
   /@babel/code-frame/7.18.6:
@@ -3126,12 +3130,13 @@ packages:
       object-inspect: 1.12.2
     dev: true
 
-  /sitemap-ts/1.1.0:
-    resolution: {integrity: sha512-bGuCFwaH7szV2sRLKYyMG6hfEO4oEpD4BRyTgQm+HdahAnj/SBbd2nDHjpbkB/Qor73PtG3KI8S2dtVLqBu3og==}
+  /sitemap-ts/1.2.2:
+    resolution: {integrity: sha512-1ITMV/Ck3oinMb8eeGZh6ff/b4foDsTlMx9bnOBs5ZME1F0MqcRqMj4rRFmIdnZYeJtptJimNcAN1XTEKdHGrw==}
     dependencies:
+      '@antfu/utils': 0.7.2
       fast-glob: 3.2.12
       sitemap: 7.1.1
-      xml-formatter: 2.6.1
+      xml-formatter: 3.2.0
     dev: true
 
   /sitemap/7.1.1:
@@ -3695,11 +3700,11 @@ packages:
         optional: true
     dev: true
 
-  /xml-formatter/2.6.1:
-    resolution: {integrity: sha512-dOiGwoqm8y22QdTNI7A+N03tyVfBlQ0/oehAzxIZtwnFAHGeSlrfjF73YQvzSsa/Kt6+YZasKsrdu6OIpuBggw==}
-    engines: {node: '>= 10'}
+  /xml-formatter/3.2.0:
+    resolution: {integrity: sha512-PYROODIUDHz1SDFePg2VThajPOuSmvo/PrYRKARcSc9xxKKs62EN9uar60IIxxknzmOSNDAxlylpw34bQp0g/Q==}
+    engines: {node: '>= 14'}
     dependencies:
-      xml-parser-xo: 3.2.0
+      xml-parser-xo: 4.0.1
     dev: true
 
   /xml-name-validator/4.0.0:
@@ -3707,9 +3712,9 @@ packages:
     engines: {node: '>=12'}
     dev: true
 
-  /xml-parser-xo/3.2.0:
-    resolution: {integrity: sha512-8LRU6cq+d7mVsoDaMhnkkt3CTtAs4153p49fRo+HIB3I1FD1o5CeXRjRH29sQevIfVJIcPjKSsPU/+Ujhq09Rg==}
-    engines: {node: '>= 10'}
+  /xml-parser-xo/4.0.1:
+    resolution: {integrity: sha512-wJmRjzVZr7D+kYSajd3zqT7tt+y9L2vVWp+s7ARxzPMtk/gZcTY0KB14B801QX2D2wqIQ1d3bV/LgcnwlpKyyg==}
+    engines: {node: '>= 14'}
     dev: true
 
   /xmlchars/2.2.0:
