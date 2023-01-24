@@ -7,7 +7,7 @@ importers:
       '@antfu/eslint-config': 0.34.1
       '@types/node': 18.11.18
       eslint: 8.32.0
-      pkgroll: 1.8.0
+      pkgroll: 1.8.1
       sitemap-ts: 1.2.2
       typescript: 4.9.4
       vite: 3.2.5
@@ -16,7 +16,7 @@ importers:
       '@antfu/eslint-config': 0.34.1_7uibuqfxkfaozanbtbziikiqje
       '@types/node': 18.11.18
       eslint: 8.32.0
-      pkgroll: 1.8.0_typescript@4.9.4
+      pkgroll: 1.8.1_typescript@4.9.4
       sitemap-ts: 1.2.2
       typescript: 4.9.4
       vite: 3.2.5_@types+node@18.11.18
@@ -2918,8 +2918,8 @@ packages:
     engines: {node: '>=8.6'}
     dev: true
 
-  /pkgroll/1.8.0_typescript@4.9.4:
-    resolution: {integrity: sha512-udmzTqrlFcUxHG+KU+bYZqb1Z/2LFFRGwLg4EuOCe6t52dIFJYrWE7iAqY3/sU9EmwDQqIVoLbxX5NKj1d1h6Q==}
+  /pkgroll/1.8.1_typescript@4.9.4:
+    resolution: {integrity: sha512-IZfG5PPznmdNlERURR4fwDfx11S5HXrbtlQ2K3S7j47EI3pF1NI0teqtY+Pq11tWXogxSiYrRsp3lboEKaCx2g==}
     hasBin: true
     peerDependencies:
       typescript: ^4.1
