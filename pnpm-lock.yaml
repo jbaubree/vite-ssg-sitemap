@@ -5,7 +5,7 @@ importers:
   .:
     specifiers:
       '@antfu/eslint-config': 0.36.0
-      '@types/node': 18.15.0
+      '@types/node': 18.15.2
       eslint: 8.36.0
       pkgroll: 1.9.0
       sitemap-ts: 1.2.2
@@ -14,12 +14,12 @@ importers:
       vue-tsc: 0.40.13
     devDependencies:
       '@antfu/eslint-config': 0.36.0_vgl77cfdswitgr47lm5swmv43m
-      '@types/node': 18.15.0
+      '@types/node': 18.15.2
       eslint: 8.36.0
       pkgroll: 1.9.0_typescript@4.9.5
       sitemap-ts: 1.2.2
       typescript: 4.9.5
-      vite: 3.2.5_@types+node@18.15.0
+      vite: 3.2.5_@types+node@18.15.2
       vue-tsc: 0.40.13_typescript@4.9.5
 
   example:
@@ -627,8 +627,8 @@ packages:
     resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
     dev: true
 
-  /@types/node/18.15.0:
-    resolution: {integrity: sha512-z6nr0TTEOBGkzLGmbypWOGnpSpSIBorEhC4L+4HeQ2iezKCi4f77kyslRwvHeNitymGQ+oFyIWGP96l/DPSV9w==}
+  /@types/node/18.15.2:
+    resolution: {integrity: sha512-sDPHm2wfx2QhrMDK0pOt2J4KLJMAcerqWNvnED0itPRJWvI+bK+uNHzcH1dFsBlf7G3u8tqXmRF3wkvL9yUwMw==}
     dev: true
 
   /@types/normalize-package-data/2.4.1:
@@ -642,7 +642,7 @@ packages:
   /@types/sax/1.2.4:
     resolution: {integrity: sha512-pSAff4IAxJjfAXUG6tFkO7dsSbTmf8CtUpfhhZ5VhkRpC4628tJhh3+V6H1E+/Gs9piSzYKT5yzHO5M4GG9jkw==}
     dependencies:
-      '@types/node': 18.15.0
+      '@types/node': 18.15.2
     dev: true
 
   /@types/semver/7.3.13:
@@ -3895,7 +3895,7 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vite/3.2.5_@types+node@18.15.0:
+  /vite/3.2.5_@types+node@18.15.2:
     resolution: {integrity: sha512-4mVEpXpSOgrssFZAOmGIr85wPHKvaDAcXqxVxVRZhljkJOMZi1ibLibzjLHzJvcok8BMguLc7g1W6W/GqZbLdQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -3920,7 +3920,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 18.15.0
+      '@types/node': 18.15.2
       esbuild: 0.15.15
       postcss: 8.4.18
       resolve: 1.22.1
