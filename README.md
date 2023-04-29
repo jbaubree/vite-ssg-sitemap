@@ -132,6 +132,13 @@ Last modification option for sitemap.
 
 Converts XML into a human readable format
 
+### generateRobotsTxt
+
+- **Type:** `boolean`
+- **Default:** `true`
+
+Enables robots.txt file generation
+
 ### robots
 
 - **Type:** `RobotOption[]`
