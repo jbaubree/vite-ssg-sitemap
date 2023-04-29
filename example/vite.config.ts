@@ -7,12 +7,8 @@ import { getNames } from './src/api/fakeApi'
 
 export default defineConfig({
   plugins: [
-    Vue({
-      include: [/\.vue$/, /\.md$/],
-    }),
-    Pages({
-      extensions: ['vue', 'js', 'md'],
-    }),
+    Vue(),
+    Pages(),
   ],
   ssgOptions: {
     dirStyle: 'nested',
