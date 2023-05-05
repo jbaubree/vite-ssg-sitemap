@@ -26,8 +26,8 @@ importers:
         specifier: 5.0.4
         version: 5.0.4
       vite:
-        specifier: 4.3.4
-        version: 4.3.4(@types/node@18.16.4)
+        specifier: 4.3.5
+        version: 4.3.5(@types/node@18.16.4)
       vue-tsc:
         specifier: 1.6.4
         version: 1.6.4(typescript@5.0.4)
@@ -46,19 +46,19 @@ importers:
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: 4.2.1
-        version: 4.2.1(vite@4.3.4)(vue@3.2.47)
+        version: 4.2.1(vite@4.3.5)(vue@3.2.47)
       typescript:
         specifier: 5.0.4
         version: 5.0.4
       vite:
-        specifier: 4.3.4
-        version: 4.3.4(@types/node@18.16.4)
+        specifier: 4.3.5
+        version: 4.3.5(@types/node@18.16.4)
       vite-plugin-pages:
         specifier: 0.29.0
-        version: 0.29.0(vite@4.3.4)
+        version: 0.29.0(vite@4.3.5)
       vite-ssg:
         specifier: 0.22.2
-        version: 0.22.2(@vueuse/head@1.1.26)(vite@4.3.4)(vue-router@4.1.6)(vue@3.2.47)
+        version: 0.22.2(@vueuse/head@1.1.26)(vite@4.3.5)(vue-router@4.1.6)(vue@3.2.47)
       vite-ssg-sitemap:
         specifier: workspace:*
         version: link:..
@@ -835,14 +835,14 @@ packages:
       unhead: 1.1.26
       vue: 3.2.47
 
-  /@vitejs/plugin-vue@4.2.1(vite@4.3.4)(vue@3.2.47):
+  /@vitejs/plugin-vue@4.2.1(vite@4.3.5)(vue@3.2.47):
     resolution: {integrity: sha512-ZTZjzo7bmxTRTkb8GSTwkPOYDIP7pwuyV+RV53c9PYUouwcbkIZIvWvNWlX2b1dYZqtOv7D6iUAnJLVNGcLrSw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.3.4(@types/node@18.16.4)
+      vite: 4.3.5(@types/node@18.16.4)
       vue: 3.2.47
     dev: true
 
@@ -3714,7 +3714,7 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite-plugin-pages@0.29.0(vite@4.3.4):
+  /vite-plugin-pages@0.29.0(vite@4.3.5):
     resolution: {integrity: sha512-vRgLflQNMs8QnDB8A5XwX8b2XYSIN1Mdy3Bx7A7N9NTFeybRj/zpvoosdbMgJ3LsJ84AznHC3GytWQZGNpE5BA==}
     peerDependencies:
       '@vue/compiler-sfc': ^2.7.0 || ^3.0.0
@@ -3731,13 +3731,13 @@ packages:
       json5: 2.2.3
       local-pkg: 0.4.3
       picocolors: 1.0.0
-      vite: 4.3.4(@types/node@18.16.4)
+      vite: 4.3.5(@types/node@18.16.4)
       yaml: 2.2.1
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /vite-ssg@0.22.2(@vueuse/head@1.1.26)(vite@4.3.4)(vue-router@4.1.6)(vue@3.2.47):
+  /vite-ssg@0.22.2(@vueuse/head@1.1.26)(vite@4.3.5)(vue-router@4.1.6)(vue@3.2.47):
     resolution: {integrity: sha512-eSlp/WiT7dkpZ6TIkZuALUcOnCJlVfqj38OdpFVZHtHFcwCH9b95edu5Hgti5WnGrq33iVfGOK67zWpt9ClroA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -3761,7 +3761,7 @@ packages:
       jsdom: 21.1.1
       kolorist: 1.8.0
       prettier: 2.8.8
-      vite: 4.3.4(@types/node@18.16.4)
+      vite: 4.3.5(@types/node@18.16.4)
       vue: 3.2.47
       vue-router: 4.1.6(vue@3.2.47)
       yargs: 17.7.2
@@ -3772,8 +3772,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /vite@4.3.4(@types/node@18.16.4):
-    resolution: {integrity: sha512-f90aqGBoxSFxWph2b39ae2uHAxm5jFBBdnfueNxZAT1FTpM13ccFQExCaKbR2xFW5atowjleRniQ7onjJ22QEg==}
+  /vite@4.3.5(@types/node@18.16.4):
+    resolution: {integrity: sha512-0gEnL9wiRFxgz40o/i/eTBwm+NEbpUeTWhzKrZDSdKm6nplj+z4lKz8ANDgildxHm47Vg8EUia0aicKbawUVVA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
