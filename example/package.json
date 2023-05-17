@@ -14,7 +14,7 @@
     "@vitejs/plugin-vue": "4.2.3",
     "typescript": "5.0.4",
     "vite": "4.3.7",
-    "vite-plugin-pages": "0.29.0",
+    "vite-plugin-pages": "0.29.1",
     "vite-ssg": "0.22.2",
     "vite-ssg-sitemap": "workspace:*"
   }
