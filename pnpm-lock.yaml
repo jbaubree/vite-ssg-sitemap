@@ -12,8 +12,8 @@ importers:
         specifier: 0.39.5
         version: 0.39.5(eslint@8.42.0)(typescript@5.1.3)
       '@types/node':
-        specifier: 18.16.17
-        version: 18.16.17
+        specifier: 18.16.18
+        version: 18.16.18
       eslint:
         specifier: 8.42.0
         version: 8.42.0
@@ -31,7 +31,7 @@ importers:
         version: 5.1.3
       vite:
         specifier: 4.3.9
-        version: 4.3.9(@types/node@18.16.17)
+        version: 4.3.9(@types/node@18.16.18)
       vue-tsc:
         specifier: 1.6.5
         version: 1.6.5(typescript@5.1.3)
@@ -56,7 +56,7 @@ importers:
         version: 5.1.3
       vite:
         specifier: 4.3.9
-        version: 4.3.9(@types/node@18.16.17)
+        version: 4.3.9(@types/node@18.16.18)
       vite-plugin-pages:
         specifier: 0.31.0
         version: 0.31.0(vite@4.3.9)
@@ -630,8 +630,8 @@ packages:
     resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
     dev: true
 
-  /@types/node@18.16.17:
-    resolution: {integrity: sha512-QAkjjRA1N7gPJeAP4WLXZtYv6+eMXFNviqktCDt4GLcmCugMr5BcRHfkOjCQzvCsnMp+L79a54zBkbw356xv9Q==}
+  /@types/node@18.16.18:
+    resolution: {integrity: sha512-/aNaQZD0+iSBAGnvvN2Cx92HqE5sZCPZtx2TsK+4nvV23fFe09jVDvpArXr2j9DnYlzuU9WuoykDDc6wqvpNcw==}
     dev: true
 
   /@types/normalize-package-data@2.4.1:
@@ -645,7 +645,7 @@ packages:
   /@types/sax@1.2.4:
     resolution: {integrity: sha512-pSAff4IAxJjfAXUG6tFkO7dsSbTmf8CtUpfhhZ5VhkRpC4628tJhh3+V6H1E+/Gs9piSzYKT5yzHO5M4GG9jkw==}
     dependencies:
-      '@types/node': 18.16.17
+      '@types/node': 18.16.18
     dev: true
 
   /@types/semver@7.3.13:
@@ -827,7 +827,7 @@ packages:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.3.9(@types/node@18.16.17)
+      vite: 4.3.9(@types/node@18.16.18)
       vue: 3.3.4
     dev: true
 
@@ -3640,7 +3640,7 @@ packages:
       json5: 2.2.3
       local-pkg: 0.4.3
       picocolors: 1.0.0
-      vite: 4.3.9(@types/node@18.16.17)
+      vite: 4.3.9(@types/node@18.16.18)
       yaml: 2.3.1
     transitivePeerDependencies:
       - supports-color
@@ -3670,7 +3670,7 @@ packages:
       jsdom: 21.1.1
       kolorist: 1.8.0
       prettier: 2.8.8
-      vite: 4.3.9(@types/node@18.16.17)
+      vite: 4.3.9(@types/node@18.16.18)
       vue: 3.3.4
       vue-router: 4.2.2(vue@3.3.4)
       yargs: 17.7.2
@@ -3681,7 +3681,7 @@ packages:
       - utf-8-validate
     dev: true
 
-  /vite@4.3.9(@types/node@18.16.17):
+  /vite@4.3.9(@types/node@18.16.18):
     resolution: {integrity: sha512-qsTNZjO9NoJNW7KnOrgYwczm0WctJ8m/yqYAMAK9Lxt4SoySUfS5S8ia9K7JHpa3KEeMfyF8LoJ3c5NeBJy6pg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -3706,7 +3706,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 18.16.17
+      '@types/node': 18.16.18
       esbuild: 0.17.8
       postcss: 8.4.23
       rollup: 3.21.1
