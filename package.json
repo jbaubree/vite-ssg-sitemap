@@ -1,7 +1,7 @@
 {
   "name": "vite-ssg-sitemap",
   "version": "0.5.1",
-  "packageManager": "pnpm@8.6.4",
+  "packageManager": "pnpm@8.6.5",
   "description": "sitemap generator working with vite-ssg",
   "license": "MIT",
   "main": "dist/index.js",
@@ -23,7 +23,7 @@
     "@types/node": "18.16.18",
     "eslint": "8.43.0",
     "pkgroll": "1.10.0",
-    "pnpm": "8.6.4",
+    "pnpm": "8.6.5",
     "sitemap-ts": "1.4.0",
     "typescript": "5.1.3",
     "vite": "4.3.9",
