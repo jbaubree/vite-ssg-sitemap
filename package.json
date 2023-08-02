@@ -22,7 +22,7 @@
     "@antfu/eslint-config": "0.40.0",
     "@types/node": "18.17.1",
     "eslint": "8.46.0",
-    "pkgroll": "1.10.0",
+    "pkgroll": "1.11.0",
     "pnpm": "8.6.11",
     "sitemap-ts": "1.4.0",
     "typescript": "5.1.6",
