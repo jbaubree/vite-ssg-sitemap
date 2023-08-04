@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "0.40.0",
-    "@types/node": "18.17.1",
+    "@types/node": "18.17.2",
     "eslint": "8.46.0",
     "pkgroll": "1.11.0",
     "pnpm": "8.6.11",
