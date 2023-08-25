@@ -21,7 +21,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "0.41.0",
     "@types/node": "18.17.11",
-    "eslint": "8.47.0",
+    "eslint": "8.48.0",
     "pkgroll": "1.11.0",
     "pnpm": "8.6.12",
     "sitemap-ts": "1.4.0",
