@@ -15,7 +15,7 @@
     "typescript": "5.2.2",
     "vite": "4.4.9",
     "vite-plugin-pages": "0.31.0",
-    "vite-ssg": "0.23.2",
+    "vite-ssg": "0.23.3",
     "vite-ssg-sitemap": "workspace:*"
   }
 }
