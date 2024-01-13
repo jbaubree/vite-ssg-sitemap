@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "@vueuse/head": "2.0.0",
-    "vue": "3.4.11",
+    "vue": "3.4.12",
     "vue-router": "4.2.5"
   },
   "devDependencies": {
