@@ -30,8 +30,8 @@ importers:
         specifier: 5.3.3
         version: 5.3.3
       vite:
-        specifier: 4.5.1
-        version: 4.5.1(@types/node@20.11.5)
+        specifier: 4.5.2
+        version: 4.5.2(@types/node@20.11.5)
       vue-tsc:
         specifier: 1.8.27
         version: 1.8.27(typescript@5.3.3)
@@ -50,19 +50,19 @@ importers:
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: 4.6.2
-        version: 4.6.2(vite@4.5.1)(vue@3.4.15)
+        version: 4.6.2(vite@4.5.2)(vue@3.4.15)
       typescript:
         specifier: 5.3.3
         version: 5.3.3
       vite:
-        specifier: 4.5.1
-        version: 4.5.1(@types/node@20.11.5)
+        specifier: 4.5.2
+        version: 4.5.2(@types/node@20.11.5)
       vite-plugin-pages:
         specifier: 0.32.0
-        version: 0.32.0(vite@4.5.1)
+        version: 0.32.0(vite@4.5.2)
       vite-ssg:
         specifier: 0.23.6
-        version: 0.23.6(vite@4.5.1)(vue-router@4.2.5)(vue@3.4.15)
+        version: 0.23.6(vite@4.5.2)(vue-router@4.2.5)(vue@3.4.15)
       vite-ssg-sitemap:
         specifier: workspace:*
         version: link:..
@@ -963,14 +963,14 @@ packages:
       vue: 3.4.15(typescript@5.3.3)
     dev: true
 
-  /@vitejs/plugin-vue@4.6.2(vite@4.5.1)(vue@3.4.15):
+  /@vitejs/plugin-vue@4.6.2(vite@4.5.2)(vue@3.4.15):
     resolution: {integrity: sha512-kqf7SGFoG+80aZG6Pf+gsZIVvGSCKE98JbiWqcCV9cThtg91Jav0yvYFC9Zb+jKetNGF6ZKeoaxgZfND21fWKw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^4.0.0 || ^5.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.5.1(@types/node@20.11.5)
+      vite: 4.5.2(@types/node@20.11.5)
       vue: 3.4.15(typescript@5.3.3)
     dev: true
 
@@ -3110,15 +3110,6 @@ packages:
       util-deprecate: 1.0.2
     dev: true
 
-  /postcss@8.4.31:
-    resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
-    engines: {node: ^10 || ^12 || >=14}
-    dependencies:
-      nanoid: 3.3.7
-      picocolors: 1.0.0
-      source-map-js: 1.0.2
-    dev: true
-
   /postcss@8.4.33:
     resolution: {integrity: sha512-Kkpbhhdjw2qQs2O2DGX+8m5OVqEcbB9HRBvuYM9pgrjEFUg30A9LmXNlTAUj4S9kgtGyrMbTzVjH7E+s5Re2yg==}
     engines: {node: ^10 || ^12 || >=14}
@@ -3605,7 +3596,7 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite-plugin-pages@0.32.0(vite@4.5.1):
+  /vite-plugin-pages@0.32.0(vite@4.5.2):
     resolution: {integrity: sha512-OxS3n0zUo5wsfgNCAuw2FiG/KD1ipgQV+2Flst4RyeI2iPv+m0YueVq+nx41k5NOWJj/zhqEas6I0b7HXveXjA==}
     peerDependencies:
       '@vue/compiler-sfc': ^2.7.0 || ^3.0.0
@@ -3622,13 +3613,13 @@ packages:
       json5: 2.2.3
       local-pkg: 0.5.0
       picocolors: 1.0.0
-      vite: 4.5.1(@types/node@20.11.5)
+      vite: 4.5.2(@types/node@20.11.5)
       yaml: 2.3.4
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /vite-ssg@0.23.6(vite@4.5.1)(vue-router@4.2.5)(vue@3.4.15):
+  /vite-ssg@0.23.6(vite@4.5.2)(vue-router@4.2.5)(vue@3.4.15):
     resolution: {integrity: sha512-wRMc492AjBYyXNaNMlxcNkOWidxdNRLFnKe2YT1fQd28AD4Ak1GvS6b7hQLMyekYHb7i9+7AvJH6ieGGKgZmTQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -3651,7 +3642,7 @@ packages:
       jsdom: 23.0.1
       kolorist: 1.8.0
       prettier: 3.1.1
-      vite: 4.5.1(@types/node@20.11.5)
+      vite: 4.5.2(@types/node@20.11.5)
       vue: 3.4.15(typescript@5.3.3)
       vue-router: 4.2.5(vue@3.4.15)
       yargs: 17.7.2
@@ -3662,8 +3653,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /vite@4.5.1(@types/node@20.11.5):
-    resolution: {integrity: sha512-AXXFaAJ8yebyqzoNB9fu2pHoo/nWX+xZlaRwoeYUxEqBO+Zj4msE5G+BhGBll9lYEKv9Hfks52PAF2X7qDYXQA==}
+  /vite@4.5.2(@types/node@20.11.5):
+    resolution: {integrity: sha512-tBCZBNSBbHQkaGyhGCDUGqeo2ph8Fstyp6FMSvTtsXeZSPpSMGlviAOav2hxVTqFcx8Hj/twtWKsMJXNY0xI8w==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -3692,7 +3683,7 @@ packages:
     dependencies:
       '@types/node': 20.11.5
       esbuild: 0.18.20
-      postcss: 8.4.31
+      postcss: 8.4.33
       rollup: 3.29.4
     optionalDependencies:
       fsevents: 2.3.3
