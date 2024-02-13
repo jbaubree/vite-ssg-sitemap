@@ -21,8 +21,8 @@ importers:
         specifier: 2.0.1
         version: 2.0.1(typescript@5.3.3)
       pnpm:
-        specifier: 8.15.1
-        version: 8.15.1
+        specifier: 8.15.2
+        version: 8.15.2
       sitemap-ts:
         specifier: 1.6.1
         version: 1.6.1
@@ -3103,8 +3103,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /pnpm@8.15.1:
-    resolution: {integrity: sha512-gxz0xfi4N0r3FSHU0VPbSdcIbeYVwq98tenX64umMN2sRv6kldZD5VLvLmijqpmj5en77oaWcClnUE31xZyycw==}
+  /pnpm@8.15.2:
+    resolution: {integrity: sha512-CtSEkTkCu/5zmI7z2NHFEK6wxlSDur3EBYnBpmNc+GA5vDY5veOdFKPMngJx5/rRx/qJHEfKfH8esGv/3MOTnw==}
     engines: {node: '>=16.14'}
     hasBin: true
     dev: true
