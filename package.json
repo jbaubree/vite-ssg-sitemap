@@ -25,7 +25,7 @@
     "pkgroll": "2.0.1",
     "pnpm": "8.15.4",
     "sitemap-ts": "1.6.1",
-    "typescript": "5.3.3",
+    "typescript": "5.4.2",
     "vite": "4.5.2",
     "vue-tsc": "1.8.27"
   }
