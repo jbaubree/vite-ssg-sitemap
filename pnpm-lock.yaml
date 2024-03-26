@@ -58,8 +58,8 @@ importers:
         specifier: 4.5.3
         version: 4.5.3(@types/node@20.11.30)
       vite-plugin-pages:
-        specifier: 0.32.0
-        version: 0.32.0(vite@4.5.3)
+        specifier: 0.32.1
+        version: 0.32.1(vite@4.5.3)
       vite-ssg:
         specifier: 0.23.6
         version: 0.23.6(vite@4.5.3)(vue-router@4.3.0)(vue@3.4.21)
@@ -3968,8 +3968,8 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite-plugin-pages@0.32.0(vite@4.5.3):
-    resolution: {integrity: sha512-OxS3n0zUo5wsfgNCAuw2FiG/KD1ipgQV+2Flst4RyeI2iPv+m0YueVq+nx41k5NOWJj/zhqEas6I0b7HXveXjA==}
+  /vite-plugin-pages@0.32.1(vite@4.5.3):
+    resolution: {integrity: sha512-4oPlIbb+J+zpJGfT2xI/27xqY+qTkRc3MBgWKfbW6IWM3CTcSyybuL9kRMCFRdBHfmgkF28qDs7fqVf/HjH1Xw==}
     peerDependencies:
       '@vue/compiler-sfc': ^2.7.0 || ^3.0.0
       vite: ^2.0.0 || ^3.0.0-0 || ^4.0.0 || ^5.0.0
@@ -3986,7 +3986,7 @@ packages:
       local-pkg: 0.5.0
       picocolors: 1.0.0
       vite: 4.5.3(@types/node@20.11.30)
-      yaml: 2.3.4
+      yaml: 2.4.1
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -4264,6 +4264,12 @@ packages:
   /yaml@2.3.4:
     resolution: {integrity: sha512-8aAvwVUSHpfEqTQ4w/KMlf3HcRdt50E5ODIQJBw1fQ5RL34xabzxtUlzTXVqc4rkZsPbvrXKWnABCD7kWSmocA==}
     engines: {node: '>= 14'}
+    dev: true
+
+  /yaml@2.4.1:
+    resolution: {integrity: sha512-pIXzoImaqmfOrL7teGUBt/T7ZDnyeGBWyXQBvOVhLkWLN37GXv8NMLK406UY6dS51JfcQHsmcW5cJ441bHg6Lg==}
+    engines: {node: '>= 14'}
+    hasBin: true
     dev: true
 
   /yargs-parser@21.1.1:
