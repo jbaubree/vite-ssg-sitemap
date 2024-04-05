@@ -12,8 +12,8 @@ importers:
         specifier: 0.43.1
         version: 0.43.1(eslint@8.57.0)(typescript@5.4.4)
       '@types/node':
-        specifier: 20.12.4
-        version: 20.12.4
+        specifier: 20.12.5
+        version: 20.12.5
       eslint:
         specifier: 8.57.0
         version: 8.57.0
@@ -31,7 +31,7 @@ importers:
         version: 5.4.4
       vite:
         specifier: 4.5.3
-        version: 4.5.3(@types/node@20.12.4)
+        version: 4.5.3(@types/node@20.12.5)
       vue-tsc:
         specifier: 1.8.27
         version: 1.8.27(typescript@5.4.4)
@@ -56,7 +56,7 @@ importers:
         version: 5.4.4
       vite:
         specifier: 4.5.3
-        version: 4.5.3(@types/node@20.12.4)
+        version: 4.5.3(@types/node@20.12.5)
       vite-plugin-pages:
         specifier: 0.32.1
         version: 0.32.1(vite@4.5.3)
@@ -978,8 +978,8 @@ packages:
     resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
     dev: true
 
-  /@types/node@20.12.4:
-    resolution: {integrity: sha512-E+Fa9z3wSQpzgYQdYmme5X3OTuejnnTx88A6p6vkkJosR3KBz+HpE3kqNm98VE6cfLFcISx7zW7MsJkH6KwbTw==}
+  /@types/node@20.12.5:
+    resolution: {integrity: sha512-BD+BjQ9LS/D8ST9p5uqBxghlN+S42iuNxjsUGjeZobe/ciXzk2qb1B6IXc6AnRLS+yFJRpN2IPEHMzwspfDJNw==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -995,7 +995,7 @@ packages:
   /@types/sax@1.2.7:
     resolution: {integrity: sha512-rO73L89PJxeYM3s3pPPjiPgVVcymqU490g0YO5n5By0k2Erzj6tay/4lr1CHAAU4JyOWd1rpQ8bCf6cZfHU96A==}
     dependencies:
-      '@types/node': 20.12.4
+      '@types/node': 20.12.5
     dev: true
 
   /@types/semver@7.5.5:
@@ -1281,7 +1281,7 @@ packages:
       vite: ^4.0.0 || ^5.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.5.3(@types/node@20.12.4)
+      vite: 4.5.3(@types/node@20.12.5)
       vue: 3.4.21(typescript@5.4.4)
     dev: true
 
@@ -3985,7 +3985,7 @@ packages:
       json5: 2.2.3
       local-pkg: 0.5.0
       picocolors: 1.0.0
-      vite: 4.5.3(@types/node@20.12.4)
+      vite: 4.5.3(@types/node@20.12.5)
       yaml: 2.4.1
     transitivePeerDependencies:
       - supports-color
@@ -4014,7 +4014,7 @@ packages:
       jsdom: 23.0.1
       kolorist: 1.8.0
       prettier: 3.1.1
-      vite: 4.5.3(@types/node@20.12.4)
+      vite: 4.5.3(@types/node@20.12.5)
       vue: 3.4.21(typescript@5.4.4)
       vue-router: 4.3.0(vue@3.4.21)
       yargs: 17.7.2
@@ -4025,7 +4025,7 @@ packages:
       - utf-8-validate
     dev: true
 
-  /vite@4.5.3(@types/node@20.12.4):
+  /vite@4.5.3(@types/node@20.12.5):
     resolution: {integrity: sha512-kQL23kMeX92v3ph7IauVkXkikdDRsYMGTVl5KY2E9OY4ONLvkHf04MDTbnfo6NKxZiDLWzVpP5oTa8hQD8U3dg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -4053,7 +4053,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 20.12.4
+      '@types/node': 20.12.5
       esbuild: 0.18.20
       postcss: 8.4.35
       rollup: 3.29.4
