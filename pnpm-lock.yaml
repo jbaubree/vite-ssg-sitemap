@@ -18,8 +18,8 @@ importers:
         specifier: 8.57.0
         version: 8.57.0
       pkgroll:
-        specifier: 2.0.2
-        version: 2.0.2(typescript@5.4.5)
+        specifier: 2.1.0
+        version: 2.1.0(typescript@5.4.5)
       pnpm:
         specifier: 8.15.8
         version: 8.15.8
@@ -3108,13 +3108,6 @@ packages:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  /magic-string@0.30.8:
-    resolution: {integrity: sha512-ISQTe55T2ao7XtlAStud6qwYPZjE4GK1S/BeVPus4jrq6JuOnQ00YKQC581RWhR122W7msZV263KzVeLoqidyQ==}
-    engines: {node: '>=12'}
-    dependencies:
-      '@jridgewell/sourcemap-codec': 1.4.15
-    dev: true
-
   /mdast-util-from-markdown@0.8.5:
     resolution: {integrity: sha512-2hkTXtYYnr+NubD/g6KGBS/0mFmBcifAsI0yIWRiRo0PjVs6SSOSOdtzbp6kSGnShDN6G5aWZpKQ2lWRy27mWQ==}
     dependencies:
@@ -3416,8 +3409,8 @@ packages:
       pathe: 1.1.1
     dev: true
 
-  /pkgroll@2.0.2(typescript@5.4.5):
-    resolution: {integrity: sha512-gRQ293zs67H2nN/CKwdLnlxCKpE5qi5rJwVvDUqep8qOLs57PlTl3MAXmLlFztwI2Iv6mP9k5BSlhBjzFJmerg==}
+  /pkgroll@2.1.0(typescript@5.4.5):
+    resolution: {integrity: sha512-oOOPiRVNB2oe/VnYaZsApPeiAAOWnkh5gMsnqeYFUgT1sHuCTpdQ0F1o5Xn880ZiYFuIX/D/+Oywe9MaR/3SeA==}
     engines: {node: '>=18'}
     hasBin: true
     peerDependencies:
@@ -3434,7 +3427,7 @@ packages:
       '@rollup/plugin-replace': 5.0.5(rollup@4.12.1)
       '@rollup/pluginutils': 5.1.0(rollup@4.12.1)
       esbuild: 0.20.1
-      magic-string: 0.30.8
+      magic-string: 0.30.10
       rollup: 4.12.1
       typescript: 5.4.5
     dev: true
