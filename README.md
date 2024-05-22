@@ -51,6 +51,7 @@ Base URI.
 - **Default:** `[]`
 
 Array of strings with manual dynamic routes.
+
 ```js
 export default {
   plugins: [
@@ -72,6 +73,7 @@ export default {
 - **Default:** `[]`
 
 Array of strings with excluded routes.
+
 ```js
 export default {
   plugins: [
@@ -95,6 +97,7 @@ You can find a working example in example folder.
 - **Default:** `[]`
 
 Array of strings with other sitemaps paths or urls.
+
 ```js
 generateSitemap({
   externalSitemaps: ['sitemap_1', 'sitemap_2', 'subpath/sitemap_3', 'https://site.com/sitemap.xml']
@@ -143,12 +146,21 @@ Last modification option for sitemap.
 
 Used for changing `changefreq`, `priority`, or `lastmod` on a by-route level.
 The (optional) route `'*'` is used as default.
+
 ### readable
 
 - **Type:** `boolean`
 - **Default:** `false`
 
 Converts XML into a human readable format
+
+### i18n
+
+- **Type:** `{ defaultLanguage?: string, languages: string[] }`
+- **Default:** `undefined`
+
+Add i18n support defining alternate links.
+defaultLanguage will use this language with / and languages with /language
 
 ### generateRobotsTxt
 
@@ -163,6 +175,7 @@ Enables robots.txt file generation
 - **Default:** `[{ userAgent: '*', allow: '/' }]`
 
 RobotOption:
+
 - **userAgent**: `string`
 - **allow**?: `string | string[]`
 - **disallow**?: `string | string[]`
