@@ -13,7 +13,7 @@ importers:
         version: 2.21.1(@vue/compiler-sfc@3.4.29)(eslint-plugin-format@0.1.2(eslint@9.5.0))(eslint@9.5.0)(typescript@5.5.2)
       '@types/node':
         specifier: ^20.12.12
-        version: 20.14.5
+        version: 20.14.6
       eslint:
         specifier: ^9.3.0
         version: 9.5.0
@@ -37,7 +37,7 @@ importers:
         version: 5.5.2
       vite:
         specifier: ^5.2.11
-        version: 5.3.1(@types/node@20.14.5)
+        version: 5.3.1(@types/node@20.14.6)
       vue-tsc:
         specifier: ^2.0.19
         version: 2.0.21(typescript@5.5.2)
@@ -56,19 +56,19 @@ importers:
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^5.0.4
-        version: 5.0.5(vite@5.3.1(@types/node@20.14.5))(vue@3.4.29(typescript@5.5.2))
+        version: 5.0.5(vite@5.3.1(@types/node@20.14.6))(vue@3.4.29(typescript@5.5.2))
       typescript:
         specifier: ^5.4.5
         version: 5.5.2
       vite:
         specifier: ^5.2.11
-        version: 5.3.1(@types/node@20.14.5)
+        version: 5.3.1(@types/node@20.14.6)
       vite-plugin-pages:
         specifier: ^0.32.1
-        version: 0.32.2(@vue/compiler-sfc@3.4.29)(vite@5.3.1(@types/node@20.14.5))(vue-router@4.3.3(vue@3.4.29(typescript@5.5.2)))
+        version: 0.32.2(@vue/compiler-sfc@3.4.29)(vite@5.3.1(@types/node@20.14.6))(vue-router@4.3.3(vue@3.4.29(typescript@5.5.2)))
       vite-ssg:
         specifier: ^0.23.7
-        version: 0.23.7(vite@5.3.1(@types/node@20.14.5))(vue-router@4.3.3(vue@3.4.29(typescript@5.5.2)))(vue@3.4.29(typescript@5.5.2))
+        version: 0.23.7(vite@5.3.1(@types/node@20.14.6))(vue-router@4.3.3(vue@3.4.29(typescript@5.5.2)))(vue@3.4.29(typescript@5.5.2))
       vite-ssg-sitemap:
         specifier: workspace:*
         version: link:..
@@ -708,8 +708,8 @@ packages:
   '@types/node@17.0.45':
     resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
 
-  '@types/node@20.14.5':
-    resolution: {integrity: sha512-aoRR+fJkZT2l0aGOJhuA8frnCSoNX6W7U2mpNq63+BxBIj5BQFt8rHy627kijCmm63ijdSdwvGgpUsU6MBsZZA==}
+  '@types/node@20.14.6':
+    resolution: {integrity: sha512-JbA0XIJPL1IiNnU7PFxDXyfAwcwVVrOoqyzzyQTyMeVhBzkJVMSkC1LlVsRQ2lpqiY4n6Bb9oCS6lzDKVQxbZw==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -3112,7 +3112,7 @@ snapshots:
 
   '@types/node@17.0.45': {}
 
-  '@types/node@20.14.5':
+  '@types/node@20.14.6':
     dependencies:
       undici-types: 5.26.5
 
@@ -3122,7 +3122,7 @@ snapshots:
 
   '@types/sax@1.2.7':
     dependencies:
-      '@types/node': 20.14.5
+      '@types/node': 20.14.6
 
   '@types/unist@2.0.10': {}
 
@@ -3234,9 +3234,9 @@ snapshots:
       unhead: 1.9.11
       vue: 3.4.29(typescript@5.5.2)
 
-  '@vitejs/plugin-vue@5.0.5(vite@5.3.1(@types/node@20.14.5))(vue@3.4.29(typescript@5.5.2))':
+  '@vitejs/plugin-vue@5.0.5(vite@5.3.1(@types/node@20.14.6))(vue@3.4.29(typescript@5.5.2))':
     dependencies:
-      vite: 5.3.1(@types/node@20.14.5)
+      vite: 5.3.1(@types/node@20.14.6)
       vue: 3.4.29(typescript@5.5.2)
 
   '@volar/language-core@2.3.0-alpha.15':
@@ -5016,7 +5016,7 @@ snapshots:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
 
-  vite-plugin-pages@0.32.2(@vue/compiler-sfc@3.4.29)(vite@5.3.1(@types/node@20.14.5))(vue-router@4.3.3(vue@3.4.29(typescript@5.5.2))):
+  vite-plugin-pages@0.32.2(@vue/compiler-sfc@3.4.29)(vite@5.3.1(@types/node@20.14.6))(vue-router@4.3.3(vue@3.4.29(typescript@5.5.2))):
     dependencies:
       '@types/debug': 4.1.12
       debug: 4.3.4
@@ -5026,7 +5026,7 @@ snapshots:
       json5: 2.2.3
       local-pkg: 0.5.0
       picocolors: 1.0.1
-      vite: 5.3.1(@types/node@20.14.5)
+      vite: 5.3.1(@types/node@20.14.6)
       yaml: 2.4.2
     optionalDependencies:
       '@vue/compiler-sfc': 3.4.29
@@ -5034,7 +5034,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  vite-ssg@0.23.7(vite@5.3.1(@types/node@20.14.5))(vue-router@4.3.3(vue@3.4.29(typescript@5.5.2)))(vue@3.4.29(typescript@5.5.2)):
+  vite-ssg@0.23.7(vite@5.3.1(@types/node@20.14.6))(vue-router@4.3.3(vue@3.4.29(typescript@5.5.2)))(vue@3.4.29(typescript@5.5.2)):
     dependencies:
       '@unhead/dom': 1.9.11
       '@unhead/vue': 1.9.11(vue@3.4.29(typescript@5.5.2))
@@ -5044,7 +5044,7 @@ snapshots:
       jsdom: 24.0.0
       kolorist: 1.8.0
       prettier: 3.2.5
-      vite: 5.3.1(@types/node@20.14.5)
+      vite: 5.3.1(@types/node@20.14.6)
       vue: 3.4.29(typescript@5.5.2)
       yargs: 17.7.2
     optionalDependencies:
@@ -5055,13 +5055,13 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  vite@5.3.1(@types/node@20.14.5):
+  vite@5.3.1(@types/node@20.14.6):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.4.38
       rollup: 4.18.0
     optionalDependencies:
-      '@types/node': 20.14.5
+      '@types/node': 20.14.6
       fsevents: 2.3.3
 
   vscode-uri@3.0.8: {}
