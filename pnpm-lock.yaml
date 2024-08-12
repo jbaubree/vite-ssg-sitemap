@@ -31,7 +31,7 @@ importers:
         version: 1.8.0
       taze:
         specifier: ^0.16.0
-        version: 0.16.4
+        version: 0.16.5
       typescript:
         specifier: ^5.4.5
         version: 5.5.4
@@ -2527,8 +2527,8 @@ packages:
     resolution: {integrity: sha512-DZ4yORTwrbTj/7MZYq2w+/ZFdI6OZ/f9SFHR+71gIVUZhOQPHzVCLpvRnPgyaMpfWxxk/4ONva3GQSyNIKRv6A==}
     engines: {node: '>=10'}
 
-  taze@0.16.4:
-    resolution: {integrity: sha512-bBETgcOOkgYb8tE2agde/WCUmHgvlfpKGV6LAxdq+8txqm1egVzIiEDb+sStYPN/D9X4WuJ3gTZwnMigJpPq8g==}
+  taze@0.16.5:
+    resolution: {integrity: sha512-b2IoHME99X1ckjDeyKN4PKd/9oloH53Eo2LAkKbFrnrHXybVOj64biXuEeR24CIe15SG1lQdZO/VBDC6bY58GQ==}
     hasBin: true
 
   terser@5.31.1:
@@ -5363,7 +5363,7 @@ snapshots:
       mkdirp: 1.0.4
       yallist: 4.0.0
 
-  taze@0.16.4:
+  taze@0.16.5:
     dependencies:
       '@antfu/ni': 0.22.1
       '@jsdevtools/ez-spawn': 3.0.4
