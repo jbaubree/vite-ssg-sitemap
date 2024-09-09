@@ -25,7 +25,7 @@ importers:
         version: 2.4.2(typescript@5.5.4)
       pnpm:
         specifier: ^9.1.2
-        version: 9.9.0
+        version: 9.10.0
       sitemap-ts:
         specifier: ^1.8.0
         version: 1.8.0
@@ -2352,8 +2352,8 @@ packages:
     resolution: {integrity: sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==}
     engines: {node: '>=4'}
 
-  pnpm@9.9.0:
-    resolution: {integrity: sha512-YMGKzROL/2ldM5vmrRP36TbupnRWYNTMSndtUkfFQNDt7hpWNpXBg6ZuuRfviPK0/rH8JfMqetytx6rzQ46ZwQ==}
+  pnpm@9.10.0:
+    resolution: {integrity: sha512-c6Ka+jag0JLs5Scd5Rd+y/gxjUVOzXATQxMbjrwMGpHEh9pGq3fI5ZbWrPFGHjWUztS+zt+JIbB0+9hlPtcFHA==}
     engines: {node: '>=18.12'}
     hasBin: true
 
@@ -5217,7 +5217,7 @@ snapshots:
 
   pluralize@8.0.0: {}
 
-  pnpm@9.9.0: {}
+  pnpm@9.10.0: {}
 
   postcss-selector-parser@6.1.2:
     dependencies:
