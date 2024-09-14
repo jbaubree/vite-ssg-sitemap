@@ -31,7 +31,7 @@ importers:
         version: 1.8.0
       taze:
         specifier: ^0.16.0
-        version: 0.16.8
+        version: 0.16.9
       typescript:
         specifier: ^5.4.5
         version: 5.6.2
@@ -2239,8 +2239,8 @@ packages:
     resolution: {integrity: sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==}
     engines: {node: '>=6'}
 
-  taze@0.16.8:
-    resolution: {integrity: sha512-vrkKrpVxkLrvSJ5Hc0FNheaJGoxv+uxzMWbGJCpucUpN5CnUlfvdL+mK98LGVqQZSjaPcAbkSQ/08N520ddLaQ==}
+  taze@0.16.9:
+    resolution: {integrity: sha512-5dROtuXIaP3HOHy7f2jTvnfHbHO8ubCoqfv1At3UOo7QB63y8oLNwpuj7w/4IdVY+lkzQSDV6f5L5Bhl3kq9QQ==}
     hasBin: true
 
   terser@5.31.1:
@@ -4738,7 +4738,7 @@ snapshots:
 
   tapable@2.2.1: {}
 
-  taze@0.16.8:
+  taze@0.16.9:
     dependencies:
       '@antfu/ni': 0.23.0
       js-yaml: 4.1.0
