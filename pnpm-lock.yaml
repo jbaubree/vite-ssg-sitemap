@@ -30,8 +30,8 @@ importers:
         specifier: ^1.8.0
         version: 1.8.0
       taze:
-        specifier: ^0.17.0
-        version: 0.17.2
+        specifier: ^0.18.0
+        version: 0.18.0
       typescript:
         specifier: ^5.4.5
         version: 5.6.3
@@ -1877,8 +1877,8 @@ packages:
   nwsapi@2.2.13:
     resolution: {integrity: sha512-cTGB9ptp9dY9A5VbMSe7fQBcl/tt22Vcqdq8+eN93rblOuE0aCFu4aZ2vMwct/2t+lFnosm8RkQW1I0Omb1UtQ==}
 
-  ofetch@1.4.0:
-    resolution: {integrity: sha512-MuHgsEhU6zGeX+EMh+8mSMrYTnsqJQQrpM00Q6QHMKNqQ0bKy0B43tk8tL1wg+CnsSTy1kg4Ir2T5Ig6rD+dfQ==}
+  ofetch@1.4.1:
+    resolution: {integrity: sha512-QZj2DfGplQAr2oj9KzceK9Hwz6Whxazmn85yYeVuS3u9XTMOGMRx0kO95MQ+vLsj/S/NwBDMMLU5hpxvI6Tklw==}
 
   optionator@0.9.4:
     resolution: {integrity: sha512-6IpQ7mKUxRcZNLIObR0hz7lxsapSSIYNZJwXPGeF0mTVqGKFIXj1DQcMoT22S3ROcLyY/rz0PWaWZ9ayWmad9g==}
@@ -1909,6 +1909,9 @@ packages:
 
   package-manager-detector@0.2.0:
     resolution: {integrity: sha512-E385OSk9qDcXhcM9LNSe4sdhx8a9mAPrZ4sMLW+tmxl5ZuGtPUcdFu+MPP2jbgiWAZ6Pfe5soGFMd+0Db5Vrog==}
+
+  package-manager-detector@0.2.2:
+    resolution: {integrity: sha512-VgXbyrSNsml4eHWIvxxG/nTL4wgybMTXCV2Un/+yEc3aDKKU6nQBZjbeP3Pl3qm9Qg92X/1ng4ffvCeD/zwHgg==}
 
   param-case@3.0.4:
     resolution: {integrity: sha512-RXlj7zCYokReqWpOPH9oYivUzLYZ5vAPIfEmCTNViosC78F8F0H9y7T7gG2M39ymgutxF5gcFEsyZQSph9Bp3A==}
@@ -2223,8 +2226,8 @@ packages:
     resolution: {integrity: sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==}
     engines: {node: '>=6'}
 
-  taze@0.17.2:
-    resolution: {integrity: sha512-VZvB2PfuIXVQdgEnjqg1NLAnxzEv28ypxTLpbtSs8rO0gdZbFRwRj3ES9QXneo112rdIwx1SM2QcIL83EfNBdg==}
+  taze@0.18.0:
+    resolution: {integrity: sha512-aL8g+4tZvfhsn147u9dRP2eUE2MV+HfJe1sAtSJp46b0Gd8AjyqlJ2uDwnJfM1XNv301Mvh98RkXQw27sco5tQ==}
     hasBin: true
 
   terser@5.31.1:
@@ -2237,6 +2240,9 @@ packages:
 
   tinyexec@0.3.0:
     resolution: {integrity: sha512-tVGE0mVJPGb0chKhqmsoosjsS+qUnJVGJpZgsHYQcGoPlG3B51R3PouqTgEGH2Dc9jjFyOqOpix6ZHNMXp1FZg==}
+
+  tinyexec@0.3.1:
+    resolution: {integrity: sha512-WiCJLEECkO18gwqIp6+hJg0//p23HXp4S+gGtAKu3mI2F2/sXC4FvHvXvB0zJVVaTPhx1/tOwdbRsa1sOBIKqQ==}
 
   tldts-core@6.1.56:
     resolution: {integrity: sha512-Ihxv/Bwiyj73icTYVgBUkQ3wstlCglLoegSgl64oSrGUBX1hc7Qmf/CnrnJLaQdZrCnTaLqMYOwKMKlkfkFrxQ==}
@@ -4349,7 +4355,7 @@ snapshots:
 
   nwsapi@2.2.13: {}
 
-  ofetch@1.4.0:
+  ofetch@1.4.1:
     dependencies:
       destr: 2.0.3
       node-fetch-native: 1.6.4
@@ -4385,6 +4391,8 @@ snapshots:
   package-json-from-dist@1.0.1: {}
 
   package-manager-detector@0.2.0: {}
+
+  package-manager-detector@0.2.2: {}
 
   param-case@3.0.4:
     dependencies:
@@ -4702,13 +4710,13 @@ snapshots:
 
   tapable@2.2.1: {}
 
-  taze@0.17.2:
+  taze@0.18.0:
     dependencies:
       '@antfu/ni': 0.23.0
       js-yaml: 4.1.0
-      ofetch: 1.4.0
-      package-manager-detector: 0.2.0
-      tinyexec: 0.3.0
+      ofetch: 1.4.1
+      package-manager-detector: 0.2.2
+      tinyexec: 0.3.1
       unconfig: 0.6.0
       yargs: 17.7.2
     transitivePeerDependencies:
@@ -4724,6 +4732,8 @@ snapshots:
   text-table@0.2.0: {}
 
   tinyexec@0.3.0: {}
+
+  tinyexec@0.3.1: {}
 
   tldts-core@6.1.56: {}
 
