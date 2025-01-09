@@ -30,8 +30,8 @@ importers:
         specifier: ^1.8.0
         version: 1.8.0
       taze:
-        specifier: ^0.18.0
-        version: 0.18.0
+        specifier: ^18.0.0
+        version: 18.1.0
       typescript:
         specifier: ^5.4.5
         version: 5.7.3
@@ -124,8 +124,8 @@ packages:
   '@antfu/install-pkg@0.4.1':
     resolution: {integrity: sha512-T7yB5QNG29afhWVkVq7XeIMBa5U/vs9mX69YqayXypPRmYzUmzwnYltplHmPtZ4HPCn+sQKeXW8I47wCbuBOjw==}
 
-  '@antfu/ni@0.23.0':
-    resolution: {integrity: sha512-R5/GkA3PfGewAXLzz6lN5XagunF6PKeDtWt8dbZQXvHfebLS0qEczV+Azg/d+tKgSh6kRBpxvu8oSjARdPtw0A==}
+  '@antfu/ni@0.23.2':
+    resolution: {integrity: sha512-FSEVWXvwroExDXUu8qV6Wqp2X3D1nJ0Li4LFymCyvCVrm7I3lNfG0zZWSWvGU1RE7891eTnFTyh31L3igOwNKQ==}
     hasBin: true
 
   '@antfu/utils@0.7.10':
@@ -2149,11 +2149,11 @@ packages:
     resolution: {integrity: sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==}
     engines: {node: '>=6'}
 
-  package-manager-detector@0.2.0:
-    resolution: {integrity: sha512-E385OSk9qDcXhcM9LNSe4sdhx8a9mAPrZ4sMLW+tmxl5ZuGtPUcdFu+MPP2jbgiWAZ6Pfe5soGFMd+0Db5Vrog==}
-
   package-manager-detector@0.2.2:
     resolution: {integrity: sha512-VgXbyrSNsml4eHWIvxxG/nTL4wgybMTXCV2Un/+yEc3aDKKU6nQBZjbeP3Pl3qm9Qg92X/1ng4ffvCeD/zwHgg==}
+
+  package-manager-detector@0.2.8:
+    resolution: {integrity: sha512-ts9KSdroZisdvKMWVAVCXiKqnqNfXz4+IbrBG8/BWx/TR5le+jfenvoBuIZ6UWM9nz47W7AbD9qYfAwfWMIwzA==}
 
   param-case@3.0.4:
     resolution: {integrity: sha512-RXlj7zCYokReqWpOPH9oYivUzLYZ5vAPIfEmCTNViosC78F8F0H9y7T7gG2M39ymgutxF5gcFEsyZQSph9Bp3A==}
@@ -2454,8 +2454,8 @@ packages:
     resolution: {integrity: sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==}
     engines: {node: '>=6'}
 
-  taze@0.18.0:
-    resolution: {integrity: sha512-aL8g+4tZvfhsn147u9dRP2eUE2MV+HfJe1sAtSJp46b0Gd8AjyqlJ2uDwnJfM1XNv301Mvh98RkXQw27sco5tQ==}
+  taze@18.1.0:
+    resolution: {integrity: sha512-Mc/PtV3ZePomBPUAzTHVALOq2fbMPR/f7MjWljZ0YHJa9UsteyNfACcAZOhO/nWXKp9C544mSo/woRx7wTkU7g==}
     hasBin: true
 
   terser@5.37.0:
@@ -2466,11 +2466,11 @@ packages:
   text-table@0.2.0:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
 
-  tinyexec@0.3.0:
-    resolution: {integrity: sha512-tVGE0mVJPGb0chKhqmsoosjsS+qUnJVGJpZgsHYQcGoPlG3B51R3PouqTgEGH2Dc9jjFyOqOpix6ZHNMXp1FZg==}
-
   tinyexec@0.3.1:
     resolution: {integrity: sha512-WiCJLEECkO18gwqIp6+hJg0//p23HXp4S+gGtAKu3mI2F2/sXC4FvHvXvB0zJVVaTPhx1/tOwdbRsa1sOBIKqQ==}
+
+  tinyexec@0.3.2:
+    resolution: {integrity: sha512-KQQR9yN7R5+OSwaK0XQoj22pwHoTlgYqmUscPYoknOoWCWfj/5/ABTMRi69FrKU5ffPVh5QcFikpWJI/P1ocHA==}
 
   tldts-core@6.1.68:
     resolution: {integrity: sha512-85TdlS/DLW/gVdf2oyyzqp3ocS30WxjaL4la85EArl9cHUR/nizifKAJPziWewSZjDZS71U517/i6ciUeqtB5Q==}
@@ -2810,10 +2810,10 @@ snapshots:
 
   '@antfu/install-pkg@0.4.1':
     dependencies:
-      package-manager-detector: 0.2.0
-      tinyexec: 0.3.0
+      package-manager-detector: 0.2.2
+      tinyexec: 0.3.1
 
-  '@antfu/ni@0.23.0': {}
+  '@antfu/ni@0.23.2': {}
 
   '@antfu/utils@0.7.10': {}
 
@@ -4463,7 +4463,7 @@ snapshots:
   importx@0.5.0:
     dependencies:
       bundle-require: 5.0.0(esbuild@0.23.1)
-      debug: 4.3.7
+      debug: 4.4.0
       esbuild: 0.23.1
       jiti: 2.0.0
       pathe: 1.1.2
@@ -4750,9 +4750,9 @@ snapshots:
 
   p-try@2.2.0: {}
 
-  package-manager-detector@0.2.0: {}
-
   package-manager-detector@0.2.2: {}
+
+  package-manager-detector@0.2.8: {}
 
   param-case@3.0.4:
     dependencies:
@@ -5076,13 +5076,13 @@ snapshots:
 
   tapable@2.2.1: {}
 
-  taze@0.18.0:
+  taze@18.1.0:
     dependencies:
-      '@antfu/ni': 0.23.0
+      '@antfu/ni': 0.23.2
       js-yaml: 4.1.0
       ofetch: 1.4.1
-      package-manager-detector: 0.2.2
-      tinyexec: 0.3.1
+      package-manager-detector: 0.2.8
+      tinyexec: 0.3.2
       unconfig: 0.6.0
       yargs: 17.7.2
     transitivePeerDependencies:
@@ -5097,9 +5097,9 @@ snapshots:
 
   text-table@0.2.0: {}
 
-  tinyexec@0.3.0: {}
-
   tinyexec@0.3.1: {}
+
+  tinyexec@0.3.2: {}
 
   tldts-core@6.1.68: {}
 
