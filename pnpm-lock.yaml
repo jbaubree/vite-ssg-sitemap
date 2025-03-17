@@ -56,7 +56,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^5.0.4
-        version: 5.2.2(vite@5.4.14(@types/node@20.17.24)(terser@5.37.0))(vue@3.5.13(typescript@5.8.2))
+        version: 5.2.3(vite@5.4.14(@types/node@20.17.24)(terser@5.37.0))(vue@3.5.13(typescript@5.8.2))
       typescript:
         specifier: ^5.4.5
         version: 5.8.2
@@ -1123,8 +1123,8 @@ packages:
     peerDependencies:
       vue: '>=2.7 || >=3'
 
-  '@vitejs/plugin-vue@5.2.2':
-    resolution: {integrity: sha512-IY0aPonWZI2huxrWjoSBUQX14GThitmr1sc2OUJymcgnY5RlUI7HoXGAnFEoVNRsck/kS6inGvxCN6CoHu86yQ==}
+  '@vitejs/plugin-vue@5.2.3':
+    resolution: {integrity: sha512-IYSLEQj4LgZZuoVpdSUCw3dIynTWQgPlaRP6iAvMle4My0HdYwr5g5wQAfwOeHQBmYwEkqF70nRpSilr6PoUDg==}
     engines: {node: ^18.0.0 || >=20.0.0}
     peerDependencies:
       vite: ^5.0.0 || ^6.0.0
@@ -3584,7 +3584,7 @@ snapshots:
       unhead: 1.9.11
       vue: 3.5.13(typescript@5.8.2)
 
-  '@vitejs/plugin-vue@5.2.2(vite@5.4.14(@types/node@20.17.24)(terser@5.37.0))(vue@3.5.13(typescript@5.8.2))':
+  '@vitejs/plugin-vue@5.2.3(vite@5.4.14(@types/node@20.17.24)(terser@5.37.0))(vue@3.5.13(typescript@5.8.2))':
     dependencies:
       vite: 5.4.14(@types/node@20.17.24)(terser@5.37.0)
       vue: 3.5.13(typescript@5.8.2)
