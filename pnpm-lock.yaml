@@ -51,8 +51,8 @@ importers:
         specifier: 3.5.13
         version: 3.5.13(typescript@5.8.2)
       vue-router:
-        specifier: 4.5.0
-        version: 4.5.0(vue@3.5.13(typescript@5.8.2))
+        specifier: 4.5.1
+        version: 4.5.1(vue@3.5.13(typescript@5.8.2))
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^5.0.4
@@ -65,10 +65,10 @@ importers:
         version: 5.4.16(@types/node@20.17.32)(terser@5.37.0)
       vite-plugin-pages:
         specifier: ^0.33.0
-        version: 0.33.0(@vue/compiler-sfc@3.5.13)(vite@5.4.16(@types/node@20.17.32)(terser@5.37.0))(vue-router@4.5.0(vue@3.5.13(typescript@5.8.2)))
+        version: 0.33.0(@vue/compiler-sfc@3.5.13)(vite@5.4.16(@types/node@20.17.32)(terser@5.37.0))(vue-router@4.5.1(vue@3.5.13(typescript@5.8.2)))
       vite-ssg:
         specifier: ^0.24.0
-        version: 0.24.3(vite@5.4.16(@types/node@20.17.32)(terser@5.37.0))(vue-router@4.5.0(vue@3.5.13(typescript@5.8.2)))(vue@3.5.13(typescript@5.8.2))
+        version: 0.24.3(vite@5.4.16(@types/node@20.17.32)(terser@5.37.0))(vue-router@4.5.1(vue@3.5.13(typescript@5.8.2)))(vue@3.5.13(typescript@5.8.2))
       vite-ssg-sitemap:
         specifier: workspace:*
         version: link:..
@@ -2725,8 +2725,8 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
 
-  vue-router@4.5.0:
-    resolution: {integrity: sha512-HDuk+PuH5monfNuY+ct49mNmkCRK4xJAV9Ts4z9UFc4rzdDnxQLyCMGGc8pKhZhHTVzfanpNwB/lwqevcBwI4w==}
+  vue-router@4.5.1:
+    resolution: {integrity: sha512-ogAF3P97NPm8fJsE4by9dwSYtDwXIY1nFY9T6DyQnGHd1E2Da94w9JIolpe42LJGIl0DwOHBi8TcRPlPGwbTtw==}
     peerDependencies:
       vue: ^3.2.0
 
@@ -5316,7 +5316,7 @@ snapshots:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
 
-  vite-plugin-pages@0.33.0(@vue/compiler-sfc@3.5.13)(vite@5.4.16(@types/node@20.17.32)(terser@5.37.0))(vue-router@4.5.0(vue@3.5.13(typescript@5.8.2))):
+  vite-plugin-pages@0.33.0(@vue/compiler-sfc@3.5.13)(vite@5.4.16(@types/node@20.17.32)(terser@5.37.0))(vue-router@4.5.1(vue@3.5.13(typescript@5.8.2))):
     dependencies:
       '@types/debug': 4.1.12
       debug: 4.4.0
@@ -5331,11 +5331,11 @@ snapshots:
       yaml: 2.7.0
     optionalDependencies:
       '@vue/compiler-sfc': 3.5.13
-      vue-router: 4.5.0(vue@3.5.13(typescript@5.8.2))
+      vue-router: 4.5.1(vue@3.5.13(typescript@5.8.2))
     transitivePeerDependencies:
       - supports-color
 
-  vite-ssg@0.24.3(vite@5.4.16(@types/node@20.17.32)(terser@5.37.0))(vue-router@4.5.0(vue@3.5.13(typescript@5.8.2)))(vue@3.5.13(typescript@5.8.2)):
+  vite-ssg@0.24.3(vite@5.4.16(@types/node@20.17.32)(terser@5.37.0))(vue-router@4.5.1(vue@3.5.13(typescript@5.8.2)))(vue@3.5.13(typescript@5.8.2)):
     dependencies:
       '@unhead/dom': 1.11.14
       '@unhead/vue': 1.11.14(vue@3.5.13(typescript@5.8.2))
@@ -5349,7 +5349,7 @@ snapshots:
       vue: 3.5.13(typescript@5.8.2)
       yargs: 17.7.2
     optionalDependencies:
-      vue-router: 4.5.0(vue@3.5.13(typescript@5.8.2))
+      vue-router: 4.5.1(vue@3.5.13(typescript@5.8.2))
     transitivePeerDependencies:
       - bufferutil
       - canvas
@@ -5391,7 +5391,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  vue-router@4.5.0(vue@3.5.13(typescript@5.8.2)):
+  vue-router@4.5.1(vue@3.5.13(typescript@5.8.2)):
     dependencies:
       '@vue/devtools-api': 6.6.4
       vue: 3.5.13(typescript@5.8.2)
