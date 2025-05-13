@@ -4,3 +4,4 @@ coverage
 dist
 public
 .vite-ssg-temp
+.pnpm-store
