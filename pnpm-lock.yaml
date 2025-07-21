@@ -27,8 +27,8 @@ importers:
         specifier: ^9.1.2
         version: 9.15.9
       sitemap-ts:
-        specifier: ^1.9.0
-        version: 1.9.0
+        specifier: ^1.10.1
+        version: 1.10.1
       taze:
         specifier: ^0.18.0
         version: 0.18.0
@@ -1861,10 +1861,6 @@ packages:
   fast-diff@1.3.0:
     resolution: {integrity: sha512-VxPP4NqbUjj6MaAOafWeUn2cXWLcCtljklUtZf0Ind4XQ+QPtmA0b18zZy0jIQx+ExRVCR/ZQpBmik5lXshNsw==}
 
-  fast-glob@3.3.2:
-    resolution: {integrity: sha512-oX2ruAFQwf/Orj8m737Y5adxDQO0LAB7/S5MnxCdTNDd4p6BsyIVsv9JQsATbTSq8KHRpLwIHbVlUNatxd+1Ow==}
-    engines: {node: '>=8.6.0'}
-
   fast-glob@3.3.3:
     resolution: {integrity: sha512-7MptL8U0cqcFdzIzwOTHoilX9x5BrNqye7Z/LuC7kCMRio1EMSyqRK3BEAUD7sXRq4iT4AzTVuZdhgQ2TCvYLg==}
     engines: {node: '>=8.6.0'}
@@ -2540,8 +2536,8 @@ packages:
   sisteransi@1.0.5:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
 
-  sitemap-ts@1.9.0:
-    resolution: {integrity: sha512-NPMOzslTlrmvCnFkB4Nfeaj+zykOifo2zNBDrVN5B5+zJWKYQk1zd6IpbVqJAAmsE/KnLYVSnMrK+ITDHQzsBg==}
+  sitemap-ts@1.10.1:
+    resolution: {integrity: sha512-K04t8xl8ZvCAQ1QShGfr1+SPpZHCzUBY62wfgTgCXhFrD239oquhgEaBLgpUC+brYoxlyudtCILyY8UdGA9I5Q==}
 
   sitemap@8.0.0:
     resolution: {integrity: sha512-+AbdxhM9kJsHtruUF39bwS/B0Fytw6Fr1o4ZAIAEqA6cke2xcoO2GleBw9Zw7nRzILVEgz7zBM5GiTJjie1G9A==}
@@ -4607,14 +4603,6 @@ snapshots:
 
   fast-diff@1.3.0: {}
 
-  fast-glob@3.3.2:
-    dependencies:
-      '@nodelib/fs.stat': 2.0.5
-      '@nodelib/fs.walk': 1.2.8
-      glob-parent: 5.1.2
-      merge2: 1.4.1
-      micromatch: 4.0.8
-
   fast-glob@3.3.3:
     dependencies:
       '@nodelib/fs.stat': 2.0.5
@@ -5343,10 +5331,10 @@ snapshots:
 
   sisteransi@1.0.5: {}
 
-  sitemap-ts@1.9.0:
+  sitemap-ts@1.10.1:
     dependencies:
       '@antfu/utils': 0.7.10
-      fast-glob: 3.3.2
+      fast-glob: 3.3.3
       sitemap: 8.0.0
       xml-formatter: 3.6.2
 
