@@ -7,6 +7,6 @@ const names = [
 
 export function getNames(): Promise<string[]> {
   return new Promise((resolve) => {
-    setTimeout(() => resolve(names), 50)
+    setTimeout(resolve, 50, names)
   })
 }

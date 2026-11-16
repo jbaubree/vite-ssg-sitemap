@@ -1,5 +1,5 @@
-import { ViteSSG } from 'vite-ssg'
 import generatedRoutes from 'virtual:generated-pages'
+import { ViteSSG } from 'vite-ssg'
 import App from './App.vue'
 
 const routes = generatedRoutes

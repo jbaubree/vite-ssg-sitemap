@@ -38,6 +38,8 @@ export default {
 
 Now, run `npm build` and this will generate sitemap.xml and robots.txt files on your dist folder.
 
+## Configuration options
+
 ### hostname
 
 - **Type:** `string`
@@ -58,7 +60,7 @@ export default {
     Vue(),
   ],
   ssgOptions: {
-    onFinished() {
+    async onFinished() {
       const users = await api.get('/users')
       const dynamicRoutes = users.map(user => `/users/${user.name}`)
       generateSitemap({ dynamicRoutes })
@@ -66,6 +68,35 @@ export default {
   },
 }
 ```
+
+For Vue Router v5+ (or [unplugin-vue-router](https://uvr.esm.is/)) with file-based routing, use the `getRoutesFromTypedRouter` helper re-exported by `sitemap-ts` to auto-discover static routes from the generated `typed-router.d.ts`:
+
+```js
+import { fileURLToPath } from 'node:url'
+import { getRoutesFromTypedRouter } from 'sitemap-ts'
+import generateSitemap from 'vite-ssg-sitemap'
+
+const typedRouterFile = fileURLToPath(new URL('./typed-router.d.ts', import.meta.url))
+
+export default {
+  plugins: [
+    Vue(),
+  ],
+  ssgOptions: {
+    async onFinished() {
+      const users = await api.get('/users')
+      generateSitemap({
+        dynamicRoutes: [
+          ...getRoutesFromTypedRouter(typedRouterFile),
+          ...users.map(user => `/users/${user.name}`),
+        ],
+      })
+    },
+  },
+}
+```
+
+Dynamic routes (`/:param`, `*`) are filtered out by default — expand them to concrete values yourself. Pass `{ includeDynamic: true }` to keep them as patterns.
 
 ### exclude
 
@@ -100,9 +131,21 @@ Array of strings with other sitemaps paths or urls.
 
 ```js
 generateSitemap({
-  externalSitemaps: ['sitemap_1', 'sitemap_2', 'subpath/sitemap_3', 'https://site.com/sitemap.xml']
+  externalSitemaps: [
+    'sitemap_1',
+    'sitemap_2',
+    'subpath/sitemap_3',
+    'https://site.com/sitemap.xml'
+  ]
 })
 ```
+
+### basePath
+
+- **Type:** `string`
+- **Default:** `''`
+
+String with a base path prepended to every generated URL. Useful when the app is served under a sub-path (e.g. `'/mysubpath'`).
 
 ### outDir
 
@@ -156,12 +199,14 @@ Converts XML into a human readable format
 
 ### i18n
 
-- **Type:** `{ defaultLanguage?: string, languages: string[], strategy?: 'suffix' | 'prefix' }`
+- **Type:** `{ defaultLanguage?: string, languages: string[], strategy?: 'suffix' | 'prefix' | 'prefix_except_default', includeDefaultLanguageInURL?: boolean }`
 - **Default:** `undefined, strategy: 'suffix'`
 
 Add i18n support defining alternate links.
 defaultLanguage will use this language with / and languages with /language.
 strategy specifies if the language code is a suffix to the path or a prefix. 'suffix' is default. Example: http://localhost/mypage/en or http://localhost/en/mypage
+
+Set `includeDefaultLanguageInURL: true` to also apply the strategy to the default language. In that case, `<loc>`, the default-language alternate, and `x-default` all point to the localized URL (e.g. http://localhost/en/mypage instead of http://localhost/mypage). Useful when every page is served under a language prefix, as recommended by [Google](https://developers.google.com/search/docs/specialty/international/localized-versions#example_2).
 
 ### generateRobotsTxt
 
@@ -178,6 +223,13 @@ Enables robots.txt file generation
 Trim the xml namespace
 See https://www.npmjs.com/package/sitemap#options-you-can-pass
 Type: https://github.com/ekalinin/sitemap.js/blob/0af656e6a4a7b1403c9b3af23603261bd9cf94d3/lib/sitemap-stream.ts#L20
+
+### splitAt
+
+- **Type:** `number`
+- **Default:** `45000`
+
+Split threshold. When the number of URLs exceeds this value, `sitemap.xml` becomes a sitemap index pointing to `sitemap-1.xml`, `sitemap-2.xml`, etc. Below the threshold a single `sitemap.xml` is produced (previous behavior). The sitemap protocol requires at most 50 000 URLs per file.
 
 ### robots
 
